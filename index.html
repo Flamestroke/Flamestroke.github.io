@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html data-bs-theme="dark">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
+    />
+    <title>Welcome</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Lato:300,400,700&amp;display=swap"
+    />
+    <link rel="stylesheet" href="assets/fonts/ionicons.min.css" />
+    <link rel="stylesheet" href="assets/css/pikaday.min.css" />
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+
+    <style>
+      .flogo {
+        background: url("assets/img/logo/logo.png");
+        height: 50px;
+        width: 50px;
+        display: block;
+      }
+      .visualizor {
+        background: url("assets/img/logo/visualizor.png");
+        height: 23px;
+        width: 100px;
+        display: block;
+      }
+      body {
+        background: linear-gradient(-20deg, #0c0130, #4c3e82, #0c0130, #fefeff);
+        background-size: 400% 400%;
+        animation: gradient 5s ease infinite;
+        height: 100vh;
+      }
+      footer {
+        background-color: #1a1f25;
+      }
+      @keyframes gradient {
+        0% {
+          background-position: 0% 50%;
+        }
+        50% {
+          background-position: 100% 50%;
+        }
+        100% {
+          background-position: 0% 50%;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <nav
+      class="navbar navbar-dark navbar-expand-lg fixed-top bg-opacity-25 portfolio-navbar gradient"
+    >
+      <div class="container">
+        <a class="navbar-brand logo" href="#"><span class="flogo"></span></a
+        >Flamestroke<button
+          data-bs-toggle="collapse"
+          class="navbar-toggler"
+          data-bs-target="#navbarNav"
+        >
+          <span class="visually-hidden">Toggle navigation</span
+          ><span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="projects-grid-cards.html">Projects</a>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="cv.html">CV</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="hire-me.html">Contact me</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="achievements.html">Achievements</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="visualizor.html"
+                ><span class="visualizor"></span
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <main class="page lanidng-page gradienty">
+      <section class="portfolio-block block-intro">
+        <div class="container">
+          <div
+            class="avatar"
+            style="background-image: url('assets/img/avatars/AG.png')"
+          ></div>
+          <div class="about-me">
+            <p>
+              Hello! I am <strong>Archit Gupte</strong>. I've worked with
+              various types of projects and have mastered multiple programming
+              languages and coding as well as software testing and debugging.
+            </p>
+          </div>
+        </div>
+      </section>
+
+        <!-- Carousel -->
+
+        <div style="padding: 50px;"
+          id="carouselExampleIndicators"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="image-gradient">
+                <img
+                  src="assets/img/achievements/Certificate_Oscillation_2021Archit Anup Gupte-1_page-0001.jpg"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="image-gradient">
+                <img
+                src="assets/img/achievements/Blockchain Certificates-2_page-0001.jpg"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="image-gradient">
+                <img
+                src="assets/img/achievements/1302512194.jpg"
+                class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+
+      <section class="portfolio-block call-to-action border-bottom"></section>
+      <section class="portfolio-block skills">
+        <div class="container">
+          <div class="heading">
+            <h2>Special Skills</h2>
+          </div>
+          <div class="row">
+            <div class="col-md-4">
+              <div class="card special-skill-item border-0">
+                <div class="card-header bg-transparent border-0">
+                  <i class="icon ion-ios-star-outline"></i>
+                </div>
+                <div class="card-body">
+                  <h3 class="card-title">Web Design</h3>
+                  <p class="card-text">
+                    Nullam id dolor id nibh ultricies vehicula ut id elit. Cras
+                    justo odio, dapibus ac facilisis in, egestas eget quam.
+                    Donec id elit non mi porta gravida at eget metus.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card special-skill-item border-0">
+                <div class="card-header bg-transparent border-0">
+                  <i class="icon ion-ios-lightbulb-outline"></i>
+                </div>
+                <div class="card-body">
+                  <h3 class="card-title">Interface Design</h3>
+                  <p class="card-text">
+                    Nullam id dolor id nibh ultricies vehicula ut id elit. Cras
+                    justo odio, dapibus ac facilisis in, egestas eget quam.
+                    Donec id elit non mi porta gravida at eget metus.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card special-skill-item border-0">
+                <div class="card-header bg-transparent border-0">
+                  <i class="icon ion-ios-gear-outline"></i>
+                </div>
+                <div class="card-body">
+                  <h3 class="card-title">3D Modelling</h3>
+                  <p class="card-text">
+                    Nullam id dolor id nibh ultricies vehicula ut id elit. Cras
+                    justo odio, dapibus ac facilisis in, egestas eget quam.
+                    Donec id elit non mi porta gravida at eget metus.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <section class="portfolio-block website gradient">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-12 col-lg-5 offset-lg-1 text">
+            <h3>Campus Concerns</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+              eget velit ultricies, feugiat est sed, efr nunc, vivamus vel
+              accumsan dui. Quisque ac dolor cursus, volutpat nisl vel,
+              porttitor eros.
+            </p>
+          </div>
+          <div class="col-md-12 col-lg-5">
+            <div class="portfolio-laptop-mockup" style="color: grey">
+              <div class="screen">
+                <div
+                  class="screen-content"
+                  style="background-image: url('assets/img/tech/byk.png')"
+                ></div>
+              </div>
+              <div class="keyboard"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="page-footer py-3 border-top">
+      <div class="container my-4">
+        <div class="links">
+          <a href="#">About me</a><a href="#">Contact me</a
+          ><a href="#">Projects</a>
+        </div>
+        <div class="social-icons">
+          <a class="me-3" href="https://github.com/Flamestroke " target="_blank"
+            ><i class="icon ion-social-github"></i></a
+          ><a
+            class="me-3"
+            href="https://www.instagram.com/flames1roke/"
+            target="_blank"
+            ><i class="icon ion-social-instagram-outline"></i></a
+          ><a
+            class="me-3"
+            href="https://sketchfab.com/Flamestroke"
+            target="_blank"
+            ><iconify-icon
+              icon="simple-icons:sketchfab"
+              style="color: rgb(229, 229, 229)"
+            ></iconify-icon
+          ></a>
+        </div>
+      </div>
+    </footer>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/pikaday.min.js"></script>
+    <script src="assets/js/theme.js"></script>
+  </body>
+</html>

@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html data-bs-theme="dark">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
+    />
+    <title>Visualizer</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Lato:300,400,700&amp;display=swap"
+    />
+    <link rel="stylesheet" href="assets/fonts/ionicons.min.css" />
+    <link rel="stylesheet" href="assets/css/pikaday.min.css" />
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+
+    <style>
+      .flogo {
+        background: url("assets/img/logo/logo.png");
+        height: 50px;
+        width: 50px;
+        display: block;
+      }
+      .visualizor {
+        background: url("assets/img/logo/visualizor.png");
+        height: 23px;
+        width: 100px;
+        display: block;
+      }
+      body {
+        background: linear-gradient(-20deg, #0c0130, #4c3e82, #0c0130, #fefeff);
+        background-size: 400% 400%;
+        animation: gradient 5s ease infinite;
+        height: 100vh;
+      }
+      footer {
+        background-color: #1a1f25;
+      }
+      @keyframes gradient {
+        0% {
+          background-position: 0% 50%;
+        }
+        50% {
+          background-position: 100% 50%;
+        }
+        100% {
+          background-position: 0% 50%;
+        }
+      }
+      model-viewer {
+        width: 100%;
+        /* display: flex;
+        flex-direction: column;
+        justify-content: center;
+        min-height: 100vh; */
+        height: 100%;
+        margin: auto;
+        /* padding-top: 500px; */
+        background-color: #dadada;
+        border: #1a1f25;
+      }
+
+    </style>
+  </head>
+  <nav
+    class="navbar navbar-dark navbar-expand-lg fixed-top bg-opacity-25 portfolio-navbar gradient"
+  >
+    <div class="container">
+      <a class="navbar-brand logo" href="#"><span class="flogo"></span></a
+      >Flamestroke<button
+        data-bs-toggle="collapse"
+        class="navbar-toggler"
+        data-bs-target="#navbarNav"
+      >
+        <span class="visually-hidden">Toggle navigation</span
+        ><span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="projects-grid-cards.html">Projects</a>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="cv.html">CV</a></li>
+          <li class="nav-item">
+            <a class="nav-link" href="hire-me.html">Contact me</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="achievements.html">Achievements</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="visualizor.html"
+              ><span class="visualizor"></span
+            ></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <body>
+      <model-viewer
+      camera-orbit="180deg 75deg 4m"
+        src="./models/val.glb"
+        poster="assets/img/logo/v.png"
+        shadow-intensity="1"
+        ar
+        camera-controls
+        touch-action="pan-y"
+        alt="A 3D model carousel"
+      >
+        <button slot="ar-button" id="ar-button">View in AR</button>
+
+        <div id="ar-prompt">
+          <!-- <img src="../../assets/hand.png" /> -->
+        </div>
+
+        <button id="ar-failure">AR is not tracking!</button>
+
+        <div class="slider">
+          <div class="slides" style="background-color: grey; border-radius: 10px;padding: 10px;">
+            <button
+              class="slide selected"
+              onclick="changeModel(this, 'val')"
+              style="background-image: url('Cars/val.png')"
+            ></button
+            ><button
+              class="slide"
+              onclick="changeModel(this, 'bmw_m3_e46_gtr')"
+              style="background-image: url('Cars/bmw.png')"
+            ></button
+            ><button
+              class="slide"
+              onclick="changeModel(this, 'ferrari_testarossa')"
+              style="background-image: url('Cars/testa.png')"
+            ></button
+            ><button
+              class="slide"
+              onclick="changeModel(this, 'lotus_espirit_s1_1976')"
+              style="background-image: url('Cars/lotus.png')"
+            ></button
+            ><button
+              class="slide"
+              onclick="changeModel(this, 'ae86')"
+              style="background-image: url('Cars/trueno.png')"
+            ></button>
+            <button
+              class="slide"
+              onclick="changeModel(this, 'mclaren-honda_mp44')"
+              style="background-image: url('Cars/mp4.png')"
+            ></button>
+          </div>
+        </div>
+      </model-viewer>
+
+
+    <script type="module">
+      const modelViewer = document.querySelector("model-viewer");
+
+      window.changeModel = (element, name) => {
+        const base = "./models/" + name;
+        modelViewer.src = base + ".glb";
+        modelViewer.poster = base + ".webp";
+        const slides = document.querySelectorAll(".slide");
+        slides.forEach((element) => {
+          element.classList.remove("selected");
+        });
+        element.classList.add("selected");
+      };
+
+      document
+        .querySelector(".slider")
+        .addEventListener("beforexrselect", (ev) => {
+          // Keep slider interactions from affecting the XR scene.
+          ev.preventDefault();
+        });
+    </script>
+
+    <style>
+      /* This keeps child nodes hidden while the element loads */
+      :not(:defined) > * {
+        display: none;
+      }
+
+      #ar-button {
+        background-image: url(../../assets/ic_view_in_ar_new_googblue_48dp.png);
+        background-repeat: no-repeat;
+        background-size: 20px 20px;
+        background-position: 12px 50%;
+        background-color: #fff;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        white-space: nowrap;
+        bottom: 132px;
+        padding: 0px 16px 0px 40px;
+        font-family: Roboto Regular, Helvetica Neue, sans-serif;
+        font-size: 14px;
+        color: #4285f4;
+        height: 36px;
+        line-height: 36px;
+        border-radius: 18px;
+        border: 1px solid #dadce0;
+      }
+
+      #ar-button:active {
+        background-color: #e8eaed;
+      }
+
+      #ar-button:focus {
+        outline: none;
+      }
+
+      #ar-button:focus-visible {
+        outline: 1px solid #4285f4;
+      }
+
+      @keyframes circle {
+        from {
+          transform: translateX(-50%) rotate(0deg) translateX(50px) rotate(0deg);
+        }
+        to {
+          transform: translateX(-50%) rotate(360deg) translateX(50px)
+            rotate(-360deg);
+        }
+      }
+
+      @keyframes elongate {
+        from {
+          transform: translateX(100px);
+        }
+        to {
+          transform: translateX(-100px);
+        }
+      }
+
+      model-viewer > #ar-prompt {
+        position: absolute;
+        left: 50%;
+        bottom: 175px;
+        animation: elongate 2s infinite ease-in-out alternate;
+        display: none;
+      }
+
+      model-viewer[ar-status="session-started"] > #ar-prompt {
+        display: block;
+      }
+
+      model-viewer > #ar-prompt > img {
+        animation: circle 4s linear infinite;
+      }
+
+      model-viewer > #ar-failure {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 175px;
+        display: none;
+      }
+
+      model-viewer[ar-tracking="not-tracking"] > #ar-failure {
+        display: block;
+      }
+
+      .slider {
+        width: 100%;
+        text-align: center;
+        overflow: hidden;
+        position: absolute;
+        bottom: 16px;
+      }
+
+      .slides {
+        display: flex;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        scroll-behavior: smooth;
+        -webkit-overflow-scrolling: touch;
+      }
+
+      .slide {
+        scroll-snap-align: start;
+        flex-shrink: 0;
+        width: 100px;
+        height: 100px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-color: #fff;
+        margin-right: 10px;
+        border-radius: 10px;
+        border: none;
+        display: flex;
+        margin: auto;
+      }
+
+      .slide.selected {
+        border: 2px solid #4285f4;
+      }
+
+      .slide:focus {
+        outline: none;
+      }
+
+      .slide:focus-visible {
+        outline: 1px solid #4285f4;
+      }
+    </style>
+    <!-- <script src="script.js"></script> -->
+    <!-- Loads <model-viewer> for browsers: -->
+    <script
+      type="module"
+      src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.0.1/model-viewer.min.js"
+    ></script>
+  </body>
+</html>
