@@ -18,9 +18,9 @@
 
     <style>
       .flogo {
-        background: url("assets/img/logo/logo.png");
+        background: url("assets/img/logo/ag.png");
         height: 50px;
-        width: 50px;
+        width: 146px;
         display: block;
       }
       .visualizor {
@@ -51,9 +51,9 @@
       }
       model-viewer {
         width: 100%;
-        /* display: flex;
+        display: flex;
         flex-direction: column;
-        justify-content: center;
+        /* justify-content: center;
         min-height: 100vh; */
         height: 100%;
         margin: auto;
@@ -61,101 +61,107 @@
         background-color: #dadada;
         border: #1a1f25;
       }
-
     </style>
   </head>
-  <nav
-    class="navbar navbar-dark navbar-expand-lg fixed-top bg-opacity-25 portfolio-navbar gradient"
-  >
-    <div class="container">
-      <a class="navbar-brand logo" href="#"><span class="flogo"></span></a
-      >Flamestroke<button
-        data-bs-toggle="collapse"
-        class="navbar-toggler"
-        data-bs-target="#navbarNav"
-      >
-        <span class="visually-hidden">Toggle navigation</span
-        ><span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item">
-            <a class="nav-link active" href="index.html">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="projects.html">Projects</a>
-          </li>
-          <li class="nav-item"><a class="nav-link" href="cv.html">CV</a></li>
-          <li class="nav-item">
-            <a class="nav-link" href="hire-me.html">Contact me</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="achievements.html">Achievements</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="visualizor.html"
-              ><span class="visualizor"></span
-            ></a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
   <body>
-      <model-viewer
+
+    <model-viewer
       camera-orbit="180deg 75deg 4m"
-        src="./models/val.glb"
-        poster="assets/img/logo/v.png"
-        shadow-intensity="1"
-        ar
-        camera-controls
-        touch-action="pan-y"
-        alt="A 3D model carousel"
+      src="./models/val.glb"
+      poster="assets/img/logo/v.png"
+      shadow-intensity="4"
+      ar
+      camera-controls
+      touch-action="pan-y"
+      alt="A 3D model carousel"
+    >
+      <nav
+        class="navbar navbar-dark navbar-expand-lg fixed-top bg-opacity-25 portfolio-navbar gradient"
       >
-        <button slot="ar-button" id="ar-button">View in AR</button>
-
-        <div id="ar-prompt">
-          <!-- <img src="../../assets/hand.png" /> -->
-        </div>
-
-        <button id="ar-failure">AR is not tracking!</button>
-
-        <div class="slider">
-          <div class="slides" style="background-color: grey; border-radius: 10px;padding: 10px;">
-            <button
-              class="slide selected"
-              onclick="changeModel(this, 'val')"
-              style="background-image: url('Cars/val.png')"
-            ></button
-            ><button
-              class="slide"
-              onclick="changeModel(this, 'bmw_m3_e46_gtr')"
-              style="background-image: url('Cars/bmw.png')"
-            ></button
-            ><button
-              class="slide"
-              onclick="changeModel(this, 'ferrari_testarossa')"
-              style="background-image: url('Cars/testa.png')"
-            ></button
-            ><button
-              class="slide"
-              onclick="changeModel(this, 'lotus_espirit_s1_1976')"
-              style="background-image: url('Cars/lotus.png')"
-            ></button
-            ><button
-              class="slide"
-              onclick="changeModel(this, 'ae86')"
-              style="background-image: url('Cars/trueno.png')"
-            ></button>
-            <button
-              class="slide"
-              onclick="changeModel(this, 'mclaren-honda_mp44')"
-              style="background-image: url('Cars/mp4.png')"
-            ></button>
+        <div class="container">
+          <a class="navbar-brand logo" href="index.html"
+            ><span class="flogo"></span></a
+          ><button
+            data-bs-toggle="collapse"
+            class="navbar-toggler"
+            data-bs-target="#navbarNav"
+          >
+            <span class="visually-hidden">Toggle navigation</span
+            ><span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link active" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="projects.html">Projects</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="cv.html">CV</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="hire-me.php">Contact me</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="achievements.html">Achievements</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="visualizor.html"
+                  ><span class="visualizor"></span
+                ></a>
+              </li>
+            </ul>
           </div>
         </div>
-      </model-viewer>
+      </nav>
+      <button slot="ar-button" id="ar-button">View in AR</button>
 
+      <div id="ar-prompt">
+        <!-- <img src="../../assets/hand.png" /> -->
+      </div>
+
+      <button id="ar-failure">AR is not tracking!</button>
+
+      <div class="slider">
+        <div
+          class="slides"
+          style="background-color: grey; border-radius: 10px; padding: 10px"
+        >
+          <button
+            class="slide selected"
+            onclick="changeModel(this, 'val')"
+            style="background-image: url('Cars/val.png')"
+          ></button
+          ><button
+            class="slide"
+            onclick="changeModel(this, 'bmw_m3_e46_gtr')"
+            style="background-image: url('Cars/bmw.png')"
+          ></button
+          ><button
+            class="slide"
+            onclick="changeModel(this, 'ferrari_testarossa')"
+            style="background-image: url('Cars/testa.png')"
+          ></button
+          ><button
+            class="slide"
+            onclick="changeModel(this, 'lotus_espirit_s1_1976')"
+            style="background-image: url('Cars/lotus.png')"
+          ></button
+          ><button
+            class="slide"
+            onclick="changeModel(this, 'ae86')"
+            style="background-image: url('Cars/trueno.png')"
+          ></button>
+          <button
+            class="slide"
+            onclick="changeModel(this, 'mclaren-honda_mp44')"
+            style="background-image: url('Cars/mp4.png')"
+          ></button>
+        </div>
+      </div>
+    </model-viewer>
+   
 
     <script type="module">
       const modelViewer = document.querySelector("model-viewer");

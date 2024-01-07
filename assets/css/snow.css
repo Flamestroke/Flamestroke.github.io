@@ -1,0 +1,28 @@
+body{
+    background-color: dimgray;
+}
+
+.img-cont{
+    width: 400px;
+    position: absolute;
+    /* top: 10em; */
+    /* right: 10em; */
+}
+
+.image{
+    border-radius: 2em;
+    width: 100%;
+    height: 100%;
+    border: 5px solid white;
+    cursor: pointer;
+}
+
+.img-cont:first-child{
+    transform: rotate(325deg);
+}
+.img-cont:nth-child(2){
+    transform: rotate(25deg);
+}
+.img-cont:nth-child(3){
+    transform: rotate(0deg);
+}
