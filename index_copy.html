@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html data-bs-theme="dark">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
+    />
+    <title>Welcome</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Lato:300,400,700&amp;display=swap"
+    />
+
+    <link rel="stylesheet" href="assets/fonts/ionicons.min.css" />
+    <link rel="stylesheet" href="assets/css/pikaday.min.css" />
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+
+    <style>
+      model-viewer {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        /* justify-content: center;
+        min-height: 100vh; */
+        height: 100%;
+        margin: auto;
+        /* padding-top: 500px; */
+        background-color: #dadada;
+        border: #1a1f25;
+      }
+      /* .flogo {
+        background: url("assets/img/logo/ag.png");
+        height: 50px;
+        width: 146px;
+        display: block;
+      }
+      .visualizor {
+        background: url("assets/img/logo/visualizor.png");
+        height: 23px;
+        width: 100px;
+        display: block;
+      }
+      body {
+        background: linear-gradient(-20deg, #0c0130, #4c3e82, #0c0130, #fefeff);
+        background-size: 400% 400%;
+        animation: gradient 5s ease infinite;
+        height: 100vh;
+      }
+      footer {
+        background-color: #1a1f25;
+      }
+      @keyframes gradient {
+        0% {
+          background-position: 0% 50%;
+        }
+        50% {
+          background-position: 100% 50%;
+        }
+        100% {
+          background-position: 0% 50%;
+        }
+      } */
+    </style>
+  </head>
+  <body>
+    <model-viewer
+      camera-controls
+      touch-action="pan-y"
+      camera-orbit="calc(-1.5rad + env(window-scroll-y) * 4rad) calc(0deg + env(window-scroll-y) * 180deg) calc(5m - env(window-scroll-y) * 10m)"
+      src="./models/val.glb"
+      alt="A 3D model of an astronaut"
+      poster="assets/img/logo/v.png"
+
+    ></model-viewer>
+    <script
+      type="module"
+      src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.0.1/model-viewer.min.js"
+    ></script>
+  </body>
+</html>

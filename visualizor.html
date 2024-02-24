@@ -103,7 +103,8 @@
   </nav>
   <body>
       <model-viewer
-      camera-orbit="180deg 75deg 4m"
+      camera-orbit="calc(-1.5rad + env(window-scroll-y) * 4rad) calc(0deg + env(window-scroll-y) * 180deg) calc(5m - env(window-scroll-y) * 10m)"
+
         src="./models/val.glb"
         poster="assets/img/logo/v.png"
         shadow-intensity="1"
@@ -155,6 +156,8 @@
           </div>
         </div>
       </model-viewer>
+
+      <div></div>
 
 
     <script type="module">
