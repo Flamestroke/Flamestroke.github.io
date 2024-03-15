@@ -18,9 +18,9 @@
 
     <style>
       .flogo {
-        background: url("assets/img/logo/ag.png");
+        background: url("assets/img/logo/logo.png");
         height: 50px;
-        width: 146px;
+        width: 50px;
         display: block;
       }
       .visualizor {
@@ -51,14 +51,14 @@
       }
       model-viewer {
         width: 100%;
-        display: flex;
+        /* display: flex;
         flex-direction: column;
-        /* justify-content: center;
+        justify-content: center;
         min-height: 100vh; */
-        height: 100%;
+        height: 200%;
         margin: auto;
         /* padding-top: 500px; */
-        background-color: #dadada;
+        /* background-color: #000000; */
         border: #1a1f25;
       }
     </style>
@@ -82,7 +82,7 @@
             <a class="nav-link active" href="index.html">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="projects-grid-cards.html">Projects</a>
+            <a class="nav-link" href="projects.html">Projects</a>
           </li>
           <li class="nav-item"><a class="nav-link" href="cv.html">CV</a></li>
           <li class="nav-item">
@@ -101,70 +101,11 @@
     </div>
   </nav>
   <body>
-      <model-viewer
-      camera-orbit="calc(-1.5rad + env(window-scroll-y) * 4rad) calc(0deg + env(window-scroll-y) * 180deg) calc(5m - env(window-scroll-y) * 10m)"
-
-        src="./models/val.glb"
-        poster="assets/img/logo/v.png"
-        shadow-intensity="1"
-        ar
-        camera-controls
-        touch-action="pan-y"
-        alt="A 3D model carousel"
-      >
-        <button slot="ar-button" id="ar-button">View in AR</button>
-  <body>
-
     <model-viewer
-      camera-orbit="180deg 75deg 4m"
-      src="./models/val.glb"
-      poster="assets/img/logo/v.png"
-      shadow-intensity="4"
-      ar
-      camera-controls
-      touch-action="pan-y"
-      alt="A 3D model carousel"
+      src="./models/aglogo.glb"
+      camera-orbit="calc(-1.5rad + env(window-scroll-y) * 4rad) calc(0deg + env(window-scroll-y) * 180deg) calc(5m - env(window-scroll-y) * 10m)"
+      alt="A 3D model of an astronaut"
     >
-      <nav
-        class="navbar navbar-dark navbar-expand-lg fixed-top bg-opacity-25 portfolio-navbar gradient"
-      >
-        <div class="container">
-          <a class="navbar-brand logo" href="index.html"
-            ><span class="flogo"></span></a
-          ><button
-            data-bs-toggle="collapse"
-            class="navbar-toggler"
-            data-bs-target="#navbarNav"
-          >
-            <span class="visually-hidden">Toggle navigation</span
-            ><span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
-              <li class="nav-item">
-                <a class="nav-link active" href="index.html">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="projects.html">Projects</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="cv.html">CV</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="hire-me.php">Contact me</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="achievements.html">Achievements</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="visualizor.html"
-                  ><span class="visualizor"></span
-                ></a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
       <button slot="ar-button" id="ar-button">View in AR</button>
 
       <div id="ar-prompt">
@@ -172,68 +113,9 @@
       </div>
 
       <button id="ar-failure">AR is not tracking!</button>
-
-      <div class="slider">
-        <div
-          class="slides"
-          style="background-color: grey; border-radius: 10px; padding: 10px"
-        >
-          <button
-            class="slide selected"
-            onclick="changeModel(this, 'val')"
-            style="background-image: url('Cars/val.png')"
-          ></button
-          ><button
-            class="slide"
-            onclick="changeModel(this, 'bmw_m3_e46_gtr')"
-            style="background-image: url('Cars/bmw.png')"
-          ></button
-          ><button
-            class="slide"
-            onclick="changeModel(this, 'ferrari_testarossa')"
-            style="background-image: url('Cars/testa.png')"
-          ></button
-          ><button
-            class="slide"
-            onclick="changeModel(this, 'lotus_espirit_s1_1976')"
-            style="background-image: url('Cars/lotus.png')"
-          ></button
-          ><button
-            class="slide"
-            onclick="changeModel(this, 'ae86')"
-            style="background-image: url('Cars/trueno.png')"
-          ></button>
-          <button
-            class="slide"
-            onclick="changeModel(this, 'mclaren-honda_mp44')"
-            style="background-image: url('Cars/mp4.png')"
-          ></button>
-        </div>
-      </div>
     </model-viewer>
-   
+    
 
-    <script type="module">
-      const modelViewer = document.querySelector("model-viewer");
-
-      window.changeModel = (element, name) => {
-        const base = "./models/" + name;
-        modelViewer.src = base + ".glb";
-        modelViewer.poster = base + ".webp";
-        const slides = document.querySelectorAll(".slide");
-        slides.forEach((element) => {
-          element.classList.remove("selected");
-        });
-        element.classList.add("selected");
-      };
-
-      document
-        .querySelector(".slider")
-        .addEventListener("beforexrselect", (ev) => {
-          // Keep slider interactions from affecting the XR scene.
-          ev.preventDefault();
-        });
-    </script>
 
     <style>
       /* This keeps child nodes hidden while the element loads */
