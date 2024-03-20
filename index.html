@@ -15,6 +15,7 @@
 
     <link rel="stylesheet" href="assets/fonts/ionicons.min.css" />
     <link rel="stylesheet" href="assets/css/pikaday.min.css" />
+    <link rel="stylesheet" href="assets/css/main.css" />
     <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
 
     <style>
@@ -31,12 +32,13 @@
         display: block;
       }
       body {
-        background: linear-gradient(-20deg, #0c0130, #4c3e82, #0c0130, #fefeff);
+        background: black;
         background-size: 400% 400%;
         animation: gradient 5s ease infinite;
         height: 100vh;
-  .pointer {cursor: url("../../img/logo/cursorP.png");}
-
+        .pointer {
+          cursor: url("../../img/logo/cursorP.png");
+        }
       }
       footer {
         background-color: #1a1f25;
@@ -62,7 +64,7 @@
       <div class="container">
         <a class="navbar-brand logo pointer" href="#">
           <span class="flogo"></span></a
-          ><button
+        ><button
           data-bs-toggle="collapse"
           class="navbar-toggler"
           data-bs-target="#navbarNav"
@@ -78,12 +80,16 @@
             <li class="nav-item">
               <a class="nav-link pointer" href="projects.html">Projects</a>
             </li>
-            <li class="nav-item"><a class="nav-link pointer" href="cv.html">CV</a></li>
+            <li class="nav-item">
+              <a class="nav-link pointer" href="cv.html">CV</a>
+            </li>
             <li class="nav-item">
               <a class="nav-link pointer" href="hire-me.html">Contact me</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link pointer" href="achievements.html">Achievements</a>
+              <a class="nav-link pointer" href="achievements.html"
+                >Achievements</a
+              >
             </li>
             <li class="nav-item">
               <a class="nav-link pointer" href="visualizor.html"
@@ -96,23 +102,116 @@
     </nav>
     <main class="page lanidng-page gradienty">
       <section class="portfolio-block block-intro">
+        <div class="cont">
+          <img class="firimg slide" src="assets/img/nature/side.png" alt="" />
+          <div class="row">
+            <div class="fontTele1 col">ARCHIT GUPTE</div>
+            <div class="fontTele2 col">3D Artist</div>
+          </div>
+        </div>
+        <img class="arr up-down" src="assets/img/nature/downarr.png" alt="" />
+      </section>
+      <img class="secimg" src="assets/img/nature/blob.png" alt="" />
+
+      <!-- Bio -->
+      <section class="gradbg">
         <div class="container">
-          <div
-            class="avatar"
-            style="background-image: url('assets/img/avatars/AG.png')"
-          ></div>
-          <div class="about-me">
-            <p>
-              Hello! I am <strong>Archit Gupte</strong>. I've worked with
-              various types of projects and have mastered multiple programming
-              languages and coding as well as software testing and debugging.
-            </p>
+          <div class="row">
+            <div class="col">
+              <div class="fontTele1">Bio</div>
+              <div class="fontTele2">
+                An enthusiastic guy who loves to create 3d model of Vehicles and
+                Architecture. Having a degree in Computer Science and an Indie
+                Game Dev myself, I specialize in building Game Engine ready 3d
+                models.
+              </div>
+              <br />
+              <hr class="slash-3" />
+              <br />
+              <div class="fontTele1">My Approach</div>
+              <div class="fontTele2">
+                An enthusiastic guy who loves to create 3d model of Vehicles and
+                Architecture. Having a degree in Computer Science and an Indie
+                Game Dev myself, I specialize in building Game Engine ready 3d
+                models.
+              </div>
+            </div>
+            <div class="col">
+              <img class="secimg" src="Cars/mp4.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <br />
+      <!-- Education -->
+      <section>
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <div class="fontTele1">Education</div>
+              <div>
+                <img class="arr" src="assets/img/nature/downarr.png" alt="" />
+              </div>
+              <div>
+                <img class="arr" src="assets/img/nature/downarr.png" alt="" />
+              </div>
+              <div>
+                <img class="arr" src="assets/img/nature/downarr.png" alt="" />
+              </div>
+            </div>
+            <div class="col">
+              <div
+                class="box"
+                style="
+                  background-color: #dd3236;
+                  padding: 15px;
+                  border-radius: 2%;
+                "
+              >
+                <div class="fontTele3">Bachelors in Computer Engineering</div>
+                <div>Vasantdada Patil Pratishthan's College of Engineering</div>
+                <div class="fontKolle2">
+                  Overall CGPA(till Sem 6) : 8.86 (2020-2024)
+                </div>
+                <div class="fontTele3">Secondary School Certificate</div>
+                <div>
+                  Saraswati Education Society's High School and Jr. College
+                </div>
+                <div class="fontKolle2">
+                  Overall Percentage: 84.6% (2005-2018)
+                </div>
+                <div class="fontTele3">Higher Secondary School Certificate</div>
+                <div>PACE Jr College of Science(Integrated)</div>
+                <div class="fontKolle2">
+                  Overall Percentage: 74.6% (2018-2020)
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <br />
+
+      <!-- web design -->
+      <section>
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-4">
+              <div class="fontTele1">WEB DESIGN</div>
+              <div>
+                Design of personal and professional web pages for clients in the
+                arts, photography, design, and entertainment industries
+              </div>
+            </div>
+            <div class="col-sm-8">
+              <img src="" alt="" />
+            </div>
           </div>
         </div>
       </section>
 
       <!-- Carousel -->
-      <div class="row">
+      <!-- <div class="row">
         <div
           class="col-md-2"
           style="padding: 50px"
@@ -189,10 +288,9 @@
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Next</span>
           </button>
-        </div>
+        </div> -->
 
-      <section class="portfolio-block call-to-action border-bottom"></section>
-      <section class="portfolio-block skills">
+      <!-- <section class="portfolio-block skills">
         <div class="container">
           <div class="heading">
             <h2>Special Skills</h2>
@@ -245,37 +343,9 @@
             </div>
           </div>
         </div>
-      </section>
+      </section> -->
     </main>
-    <section class="portfolio-block website gradient">
-      <div class="container">
-        <div class="row align-items-center">
-          <div class="col-md-12 col-lg-5 offset-lg-1 text">
-            <h3>Campus Concerns</h3>
-            <p>
-              The “campus concerns” website is developed as an empowering and
-              effective platform that resolves the complaints of students and
-              can address issues quickly and efficiently, promote accountability
-              and transparency, and ultimately create a better learning
-              environment for all.
-            </p>
-          </div>
-          <div class="col-md-12 col-lg-5">
-            <div class="portfolio-laptop-mockup" style="color: grey">
-              <div class="screen">
-                <div
-                  class="screen-content"
-                  style="background-image: url('assets/img/tech/cc.png')"
-                ></div>
-              </div>
-              <div class="keyboard"></div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    
-    
+
     <footer class="page-footer py-3 border-top">
       <div class="container my-4">
         <div class="links">
@@ -283,7 +353,10 @@
           ><a href="#">Projects</a>
         </div>
         <div class="social-icons">
-          <a class="me-3 pointer" href="https://github.com/Flamestroke " target="_blank"
+          <a
+            class="me-3 pointer"
+            href="https://github.com/Flamestroke "
+            target="_blank"
             ><i class="icon ion-social-github"></i></a
           ><a
             class="me-3 pointer"
