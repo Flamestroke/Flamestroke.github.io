@@ -57,6 +57,7 @@ hr {
   max-width: 100%;
   background-position: 50%;
   box-sizing: border-box;
+  display: flex;
 }
 .slash-3 {
   height: 20px;
@@ -179,4 +180,15 @@ hr {
   100% {
     -ms-transform: translate(1px, 22px);
   }
+}
+
+
+
+
+
+
+.sketchy{
+border-radius: 50px 50px 0 0;
+padding: 5px;
+background-color: #141010;
 }

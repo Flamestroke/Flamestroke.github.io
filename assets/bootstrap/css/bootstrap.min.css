@@ -11945,18 +11945,18 @@ img::-moz-selection {
   text-align: center;
 }
 .portfolio-laptop-mockup .screen {
-  border: 1px solid #001cff;
+  border: 1px solid #dd3236;
   border-bottom: none;
   width: 250px;
   height: 160px;
   padding: 10px;
   border-radius: 5px;
-  background-color: #747474;
+  background-color: silver;
   position: relative;
   left: 15px;
 }
 .portfolio-laptop-mockup .screen .screen-content {
-  border: 1px solid #001cff;
+  border: 1px solid #dd3236;
   background-position: center;
   background-size: cover;
   height: 100%;
@@ -11965,10 +11965,10 @@ img::-moz-selection {
 .portfolio-laptop-mockup .keyboard {
   width: 280px;
   height: 10px;
-  border: 1px solid #001cff;
+  border: 1px solid #dd3236;
   border-bottom-left-radius: 7px;
   border-bottom-right-radius: 7px;
-  background-color: #747474;
+  background-color: silver;
 }
 .portfolio-block.photography {
   padding-top: 20px;
