@@ -217,9 +217,16 @@ hr {
 
 
 
+.scrl{
+  scale: .8; opacity: 0;
+  animation: fade-in linear forwards;
+  animation-timeline: view();
+  /* animation-range: entry 300px; */
+}
 
-
-
+@keyframes fade-in {
+  to{scale: 1;opacity: 1;}  
+}
 
 
 
