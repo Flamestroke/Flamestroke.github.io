@@ -236,19 +236,19 @@ hr {
   margin: 0 auto;
   right: auto;
   width: 90%;
-  margin-bottom: 50px;
-  top: -50px;
+
 }
 .modelDivFont{
-  margin-top: 50px;
+  /* margin-top: 50px; */
 }
 .modelBg{
-  background-image: url("../img/nature/w11.jpg");
+  /* background-image: url("../img/nature/w11.jpg"); */
   background-size: contain;
-  margin: 0 auto;
-  left: auto;
+  background-position: center;
+  /* margin: 0 auto;
+  left: auto; */
   position: relative;
-  right: auto;
+  /* right: auto; */
   width: 100%;
   background-repeat: no-repeat;
 
