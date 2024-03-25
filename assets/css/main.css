@@ -33,6 +33,7 @@
 .arr {
   height: 50px;
   width: 50px;
+  margin: 0 auto;
 }
 .fontTele1 {
   font-family: "Telegraf";
@@ -187,7 +188,7 @@ hr {
   /* border-radius: 50px 50px 0 0;
   background-color: #141010; */
   padding: 5px;
-  border-radius: 50px 50px 0 0 ;
+  border-radius: 50px 50px 0 0;
   background: #141010;
   box-shadow: 28px 28px 57px #080606, -28px -28px 57px #201a1a;
 }
@@ -210,24 +211,20 @@ hr {
   overflow: hidden;
 }
 
-
-
-
-
-
-
-
-.scrl{
-  scale: .8; opacity: 0;
+.scrl {
+  scale: 0.8;
+  opacity: 0;
   animation: fade-in linear forwards;
   animation-timeline: view();
   /* animation-range: entry 300px; */
 }
 
 @keyframes fade-in {
-  to{scale: 1;opacity: 1;}  
+  to {
+    scale: 1;
+    opacity: 1;
+  }
 }
-
 
 .modelDiv {
   height: 90%;
@@ -236,47 +233,31 @@ hr {
   margin: 0 auto;
   right: auto;
   width: 90%;
-
 }
-.modelDivFont{
-  /* margin-top: 50px; */
-}
-.modelBg{
-  background-image: url("../img/nature/w11.jpg");
-  background-size: contain;
-  background-position: center;
-  margin-bottom: 50px;
-  /* left: auto; */
+.modelDivFont {
   position: relative;
-  /* right: auto; */
+  text-align: center;
+}
+.modelBg {
+  background-image: url("../img/nature/w11.jpg");
+  background-size: auto;
+  background-position: bottom;
+  margin: 0 auto;
+  max-width: 1920px;
+  top: 0;
+  left: 0;
+  position: absolute;
+  right: 0;
   width: 100%;
+  height: calc(100% + 20px);
   background-repeat: no-repeat;
-
-  /* margin-bottom: 50px;
-  top: -50px;
-} */
+  /* margin-bottom: 50px; */
 }
 
-.modelBg img{
+.modelBg img {
   position: absolute;
   margin-top: -10px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 .pyramid-loader {
   position: relative;
@@ -304,7 +285,7 @@ hr {
 .pyramid-loader .wrapper .side {
   width: 70px;
   height: 70px;
-/* you can choose any gradient or color you want */
+  /* you can choose any gradient or color you want */
   /* background: radial-gradient( #2F2585 10%, #F028FD 70%, #2BDEAC 120%); */
   position: absolute;
   top: 0;
@@ -320,21 +301,18 @@ hr {
   transform: rotateZ(-30deg) rotateY(90deg);
   /* background: conic-gradient( #2BDEAC, #F028FD, #D8CCE6, #2F2585); */
   background-image: url("../img/logo/ag.png");
-
 }
 
 .pyramid-loader .wrapper .side2 {
   transform: rotateZ(30deg) rotateY(90deg);
   /* background: conic-gradient( #2F2585, #D8CCE6, #F028FD, #2BDEAC); */
   background-image: url("../img/logo/ag.png");
-
 }
 
 .pyramid-loader .wrapper .side3 {
   transform: rotateX(30deg);
   /* background: conic-gradient( #2F2585, #D8CCE6, #F028FD, #2BDEAC); */
   background-image: url("../img/logo/ag.png");
-
 }
 
 .pyramid-loader .wrapper .side4 {
@@ -346,7 +324,7 @@ hr {
 .pyramid-loader .wrapper .shadow {
   width: 100%;
   height: 100%;
-  background: #8B5AD5;
+  background: #8b5ad5;
   position: absolute;
   top: 0;
   left: 0;

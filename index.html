@@ -7,6 +7,8 @@
       content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
     />
     <title>Welcome</title>
+    <link rel="icon" type="image/x-icon" href="assets/img/logo/agX.png" />
+
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css" />
     <link
       rel="stylesheet"
@@ -34,7 +36,6 @@
       body {
         background: black;
         background-size: 400% 400%;
-        animation: gradient 5s ease infinite;
         height: 100vh;
         .pointer {
           cursor: url("../../img/logo/cursorP.png");
@@ -42,17 +43,6 @@
       }
       footer {
         background-color: #1a1f25;
-      }
-      @keyframes gradient {
-        0% {
-          background-position: 0% 50%;
-        }
-        50% {
-          background-position: 100% 50%;
-        }
-        100% {
-          background-position: 0% 50%;
-        }
       }
     </style>
   </head>
@@ -100,9 +90,33 @@
         </div>
       </div>
     </nav> -->
-    <header>
+    <!-- <header>
       <div class="conti"><div class="inner"></div></div>
-    </header>
+    </header> -->
+    <br /><br /><br /><br />
+
+      <a href="index.html#bio " style="margin: 0 auto;"
+        ><img
+          class="arr up-down pointer"
+          style="margin: 0 auto;"
+          src="assets/img/nature/downarr.png"
+          alt=""
+      /></a>
+
+    <br /><br /><br /><br />
+    <model-viewer
+      camera-orbit="calc(0rad + env(window-scroll-y) * 0rad) calc(45deg + env(window-scroll-y) * 360deg) calc(0m - env(window-scroll-y) * -10m)"
+      src="models/aglogo.glb"
+      style="
+        width: 50%;
+        height: 50%;
+        outline: none;
+        opacity: 1;
+        visibility: visible;
+        margin: 0 auto;
+      "
+    ></model-viewer>
+
     <main class="page lanidng-page gradienty">
       <section class="portfolio-block block-intro">
         <div class="container">
@@ -259,20 +273,22 @@
     </main>
 
     <section class="modelDiv">
-      <div class="modelDiv container modelBg">
+      <h1 class="fontTele1">My Work</h1>
+      <div class="modelDiv container">
         <div class="modelDiv modelBg">
-          <h1 class="fontTele2 modelDivFont">Aston Martin Valhalla 2023</h1>
-          <img src="assets/img/nature/w11.jpg" alt="" width="100%" >
+          <h2 class="modelDivFont">Aston Martin Valhalla 2023</h2>
+        </div>
+        <div class="modelDiv">
           <model-viewer
             id="color"
             alt="assets/img/logo/v.png"
             src="./models/val.glb"
             ar
-            poster="assets/img/logo/v.png"
+            poster="assets/img/cars/val.png"
             auto-rotate-delay="1000"
-            shadow-intensity="1"
             camera-controls="true"
             disable-zoom="true"
+            disable-pan="true"
             style="
               width: 100%;
               height: 100%;
