@@ -242,11 +242,11 @@ hr {
   /* margin-top: 50px; */
 }
 .modelBg{
-  /* background-image: url("../img/nature/w11.jpg"); */
+  background-image: url("../img/nature/w11.jpg");
   background-size: contain;
   background-position: center;
-  /* margin: 0 auto;
-  left: auto; */
+  margin-bottom: 50px;
+  /* left: auto; */
   position: relative;
   /* right: auto; */
   width: 100%;
@@ -257,6 +257,10 @@ hr {
 } */
 }
 
+.modelBg img{
+  position: absolute;
+  margin-top: -10px;
+}
 
 
 
