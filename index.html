@@ -34,7 +34,7 @@
         display: block;
       }
       body {
-        background: black;
+        background: #141010;
         background-size: 400% 400%;
         height: 100vh;
         .pointer {
@@ -95,14 +95,15 @@
     </header> -->
     <br /><br /><br /><br />
 
-      <a href="index.html#bio " style="margin: 0 auto;"
-        ><img
-          class="arr up-down pointer"
-          style="margin: 0 auto;"
-          src="assets/img/nature/downarr.png"
-          alt=""
-      /></a>
+    <a href="index.html#bio " style="margin: 0 auto"
+      ><img
+        class="arr up-down pointer"
+        style="margin: 0 auto"
+        src="assets/img/nature/downarr.png"
+        alt=""
+    /></a>
 
+    <br /><br /><br /><br />
     <br /><br /><br /><br />
     <model-viewer
       camera-orbit="calc(0rad + env(window-scroll-y) * 0rad) calc(45deg + env(window-scroll-y) * 360deg) calc(0m - env(window-scroll-y) * -10m)"
@@ -276,13 +277,17 @@
       <h1 class="fontTele1">My Work</h1>
       <div class="modelDiv container">
         <div class="modelDiv modelBg">
-          <h2 class="modelDivFont">Aston Martin Valhalla 2023</h2>
+          <h2 class="modelDivFont" id="modelName">
+            Aston Martin Valhalla 2023
+          </h2>
+          <button class="modelBtnR" id="next"></button>
+          <button class="modelBtnL" id="prev"></button>
         </div>
         <div class="modelDiv">
           <model-viewer
             id="color"
             alt="assets/img/logo/v.png"
-            src="./models/val.glb"
+            src="models/val.glb"
             ar
             poster="assets/img/cars/val.png"
             auto-rotate-delay="1000"
@@ -298,7 +303,7 @@
             "
             camera-target="auto auto auto"
             auto-rotate="true"
-            camera-orbit="34deg 74deg auto"
+            camera-orbit="225deg  74deg auto"
             min-camera-orbit="auto 74deg 28deg"
             max-camera-orbit="auto 74deg 28deg"
             min-field-of-view="28deg"
@@ -480,6 +485,36 @@
         </div>
       </div>
     </footer> -->
+
+    <script>
+      const models = [
+        "val.glb",
+        "scuderia_ferrari_marlboro_f2002.glb",
+        "mclaren-honda_mp44.glb",
+        "lotus_espirit_s1_1976.glb",
+        "ae86.glb",
+        "ferrari_testarossa.glb",
+        "bmw_m3_e46_gtr.glb",
+      ];
+      const modelNames = [" Aston Martin Valhalla","Scuderia Ferrari Marlboro F2002","McLaren-Honda MP4/4","Lotus Esprit S1","Toyota Trueno AE86 (Initial D)","Ferrari Testarossa","BMW M3 E46 GTR (NFSMW)"];
+      const toggleModel = document.querySelector("#color");
+      // const name = document.querySelector("#modelName")
+      const nextBtn = document.querySelector("#next");
+      const prevBtn = document.querySelector("#prev");
+      let currentIndex = 0;
+
+      nextBtn.addEventListener("click", () => {
+        currentIndex = (currentIndex + 1) % models.length;
+        toggleModel.setAttribute("src", `models/${models[currentIndex]}`);
+        document.getElementById("modelName").innerHTML = modelNames[currentIndex];
+      });
+      prevBtn.addEventListener("click", () => {
+        currentIndex = (currentIndex - 1 + models.length) % models.length;
+        toggleModel.setAttribute("src", `models/${models[currentIndex]}`);
+        document.getElementById("modelName").innerHTML = modelNames[currentIndex];
+      });
+    </script>
+
     <script>
       const inner = document.querySelector(".inner");
       const section = document.querySelector("#hehe");
