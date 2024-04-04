@@ -6,21 +6,40 @@
   font-family: TelegrafRegular;
   src: url(../fonts/TelegrafRegular.otf);
 }
-@font-face {
+/* @font-face {
   font-family: Kollektif;
   src: url(../fonts/Kollektif.ttf);
 }
 @font-face {
   font-family: KollektifItalic;
   src: url(../fonts/Kollektif-Italic.ttf);
-}
+} */
+
 * {
-  font-family: "Kollektif";
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
   color: white;
 }
 .firimg {
   height: 50%;
   width: 50%;
+}
+.firtimg {
+  height: 100%;
+  width: 100%;
+  animation: myAnim 2s ease 0s 1 normal forwards;
+}
+
+@keyframes myAnim {
+	0% {
+		transform: translateX(-500px);
+	}
+
+	100% {
+		transform: translateX(-50px);
+	}
 }
 .secimg {
   height: 100%;
@@ -28,12 +47,12 @@
 }
 .gradbg {
   height: 100%;
-  background-image: linear-gradient(#141010, black);
+  background-image: linear-gradient(black, #141010);
 }
 .arr {
   height: 50px;
   width: 50px;
-  margin: 0 auto;
+  position: relative;
 }
 .fontTele1 {
   font-family: "Telegraf";
@@ -49,7 +68,8 @@
   font-weight: 100;
 }
 .fontKolle2 {
-  font-family: "KollektifItalic";
+  font-family: "Inter", sans-serif;
+  font-style: italic;
   color: white;
   font-size: small;
 }
@@ -237,6 +257,10 @@ hr {
 .modelDivFont {
   position: relative;
   text-align: center;
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
 }
 .modelBg {
   background-image: url("../img/nature/w11.jpg");
@@ -254,10 +278,10 @@ hr {
   /* margin-bottom: 50px; */
 }
 
-.modelBg img {
+/* .modelBg img {
   position: absolute;
   margin-top: -10px;
-}
+} */
 
 .modelBtnR {
   background-image: url("../img/logo/button.png");
@@ -268,6 +292,7 @@ hr {
   width: 50px;
   height: 50px;
   border: 0;
+  z-index: 1;
 }
 
 .modelBtnL {
@@ -279,4 +304,83 @@ hr {
   width: 50px;
   height: 50px;
   border: 0;
+  z-index: 1;
+}
+.stats {
+  display: flex;
+  left: 7%;
+  top: calc(10%+55px);
+  position: absolute;
+  border-color: #ff0006;
+  border-style: solid;
+  opacity: 50%;
+  border-radius: 2em;
+  padding: 20px 20px 0 20px;
+  background: linear-gradient(
+    50deg,
+    rgba(255, 255, 255, 0.4) 12%,
+    rgba(255, 255, 255, 0.1) 77%
+  );
+  box-shadow: 0px 4px 24px 1px rgba(0, 0, 0, 0.28);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+}
+.stats_font {
+  font-family: "Telegraf";
+  color: white;
+  padding: 0 10px 0 0;
+}
+.statsIcons {
+  min-width: 25px;
+  max-width: 30px;
+  padding: 0 10px 0 0;
+}
+.stats_num {
+  font-family: "Telegraf";
+  color: white;
+  text-align: end;
+  padding: 0 0 0 10px;
+}
+
+
+.workimg {
+  animation: easey 2s ease 0s 1 normal forwards;
+}
+
+@keyframes easey {
+	0% {
+		transform: translateX(700px); 
+	}
+
+	100% {
+		transform: translateX(200px);
+	}
+}
+
+.workimg1 {
+  animation: easey1 2s ease 0s 1 normal forwards;
+}
+
+@keyframes easey1 {
+	0% {
+		transform: translateX(700px); 
+	}
+
+	100% {
+		transform: translateX(250px);
+	}
+}
+
+.workimg2 {
+  animation: easey2 2s ease 0s 1 normal forwards;
+}
+
+@keyframes easey2 {
+	0% {
+		transform: translateX(700px); 
+	}
+
+	100% {
+		transform: translateX(300px);
+	}
 }

@@ -14,6 +14,12 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css?family=Lato:300,400,700&amp;display=swap"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
 
     <link rel="stylesheet" href="assets/fonts/ionicons.min.css" />
     <link rel="stylesheet" href="assets/css/pikaday.min.css" />
@@ -93,39 +99,15 @@
     <!-- <header>
       <div class="conti"><div class="inner"></div></div>
     </header> -->
-    <br /><br /><br /><br />
-
-    <a href="index.html#bio " style="margin: 0 auto"
-      ><img
-        class="arr up-down pointer"
-        style="margin: 0 auto"
-        src="assets/img/nature/downarr.png"
-        alt=""
-    /></a>
-
-    <br /><br /><br /><br />
-    <br /><br /><br /><br />
-    <model-viewer
-      camera-orbit="calc(0rad + env(window-scroll-y) * 0rad) calc(45deg + env(window-scroll-y) * 360deg) calc(0m - env(window-scroll-y) * -10m)"
-      src="models/aglogo.glb"
-      style="
-        width: 50%;
-        height: 50%;
-        outline: none;
-        opacity: 1;
-        visibility: visible;
-        margin: 0 auto;
-      "
-    ></model-viewer>
 
     <main class="page lanidng-page gradienty">
       <section class="portfolio-block block-intro">
         <div class="container">
-          <!-- <img
-            class="firimg inner slide"
+          <img
+            class="firtimg"
             src="assets/img/nature/side.png"
             alt=""
-          /> -->
+          />
           <div class="row" id="hehe">
             <div class="col-sm"><h1 class="fontTele1">ARCHIT GUPTE</h1></div>
             <div class="col-sm"><h3 class="fontTele2">3D Artist</h3></div>
@@ -194,25 +176,31 @@
                 class="box"
                 style="
                   background-color: #dd3236;
-                  padding: 15px;
-                  border-radius: 2%;
+                  padding: 20px;
+                  border-radius: 2em;
                 "
               >
-                <h4 class="fontTele3">Bachelors in Computer Engineering</h4>
+                <h4 class="fontTele3" style="padding: 5px">
+                  Bachelors in Computer Engineering
+                </h4>
                 <h5>Vasantdada Patil Pratishthan's College of Engineering</h5>
-                <h5 class="fontKolle2">
+                <h5 class="fontKolle2" style="padding: 5px">
                   Overall CGPA(till Sem 6) : 8.86 (2020-2024)
                 </h5>
-                <h4 class="fontTele3">Secondary School Certificate</h4>
+                <h4 class="fontTele3" style="padding: 5px">
+                  Secondary School Certificate
+                </h4>
                 <h5>
                   Saraswati Education Society's High School and Jr. College
                 </h5>
-                <h5 class="fontKolle2">
+                <h5 class="fontKolle2" style="padding: 5px">
                   Overall Percentage: 84.6% (2005-2018)
                 </h5>
-                <h4 class="fontTele3">Higher Secondary School Certificate</h4>
+                <h4 class="fontTele3" style="padding: 5px">
+                  Higher Secondary School Certificate
+                </h4>
                 <h5>PACE Jr College of Science(Integrated)</h5>
-                <h5 class="fontKolle2">
+                <h5 class="fontKolle2" style="padding: 5px">
                   Overall Percentage: 74.6% (2018-2020)
                 </h5>
               </div>
@@ -227,11 +215,11 @@
         <div class="container">
           <div class="row">
             <div class="col-sm-4">
-              <div class="fontTele1">WEB DESIGN</div>
-              <div>
+              <h1 class="fontTele1">Web Design</h1>
+              <h4 style="font-weight: 700">
                 Design of personal and professional web pages for clients in the
                 arts, photography, design, and entertainment industries
-              </div>
+              </h4>
             </div>
             <div class="col-sm-8">
               <div class="row">
@@ -273,6 +261,7 @@
       </section>
     </main>
 
+    <!-- model viewer -->
     <section class="modelDiv">
       <h1 class="fontTele1">My Work</h1>
       <div class="modelDiv container">
@@ -280,8 +269,52 @@
           <h2 class="modelDivFont" id="modelName">
             Aston Martin Valhalla 2023
           </h2>
-          <button class="modelBtnR" id="next"></button>
-          <button class="modelBtnL" id="prev"></button>
+          <div class="stats wrapper">
+            <div class="container">
+              <div class="statsItems row">
+                <div class="statsIcons col-sm">
+                  <img class="statsIcons" src="assets/img/logo/48.png" alt="" />
+                </div>
+                <h4 class="stats_font col-sm">Triangles:</h4>
+                <h4 class="stats_num col-sm" id="tria">793</h4>
+              </div>
+
+              <div class="statsItems row">
+                <div class="statsIcons col-sm">
+                  <img class="statsIcons" src="assets/img/logo/49.png" alt="" />
+                </div>
+                <h4 class="stats_font col-sm">Vertices:</h4>
+                <h4 class="stats_num col-sm" id="vert">961.6k</h4>
+              </div>
+
+              <div class="statsItems row">
+                <div class="statsIcons col-sm">
+                  <img class="statsIcons" src="assets/img/logo/50.png" alt="" />
+                </div>
+                <h4 class="stats_font col-sm">Quads:</h4>
+                <h4 class="stats_num col-sm" id="quad">631.4k</h4>
+              </div>
+
+              <div class="statsItems row">
+                <div class="statsIcons col-sm">
+                  <img class="statsIcons" src="assets/img/logo/51.png" alt="" />
+                </div>
+                <h4 class="stats_font col-sm">Polygons:</h4>
+                <h4 class="stats_num col-sm" id="poly">4k</h4>
+              </div>
+            </div>
+          </div>
+
+          <button
+            class="btn modelBtnR pointer"
+            id="next"
+            type="button"
+          ></button>
+          <button
+            class="btn modelBtnL pointer"
+            id="prev"
+            type="button"
+          ></button>
         </div>
         <div class="modelDiv">
           <model-viewer
@@ -314,6 +347,32 @@
             stage-light-intensity="7"
             environment-intensity="7"
           ></model-viewer>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-8">
+            <h1 class="fontTele1">Work</h1>
+            <h1 style="font-weight: 700; font-style: italic">With Me</h1>
+          </div>
+          <div class="col-sm-4">
+            <img class="firimg workimg" src="assets/img/nature/redbar.png" alt="">
+            <img class="firimg workimg1" src="assets/img/nature/redbar.png" alt="">
+            <img class="firimg workimg2" src="assets/img/nature/redbar.png" alt="">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-8">
+            <img class="secimg" src="assets/img/nature/top.png" alt="" />
+          </div>
+          <div class="col-sm-4">
+            <h5>Address</h5>
+            <h5>Phone</h5>
+            <h5>E-mail</h5>
+          </div>
         </div>
       </div>
     </section>
@@ -495,9 +554,44 @@
         "ae86.glb",
         "ferrari_testarossa.glb",
         "bmw_m3_e46_gtr.glb",
-        "Infinity_ring.glb",
       ];
-      const modelNames = [" Aston Martin Valhalla","Scuderia Ferrari Marlboro F2002","McLaren-Honda MP4/4","Lotus Esprit S1","Toyota Trueno AE86 (Initial D)","Ferrari Testarossa","BMW M3 E46 GTR (NFSMW)","Infinity Ring"];
+      const modelNames = [
+        "Aston Martin Valhalla",
+        "Scuderia Ferrari Marlboro F2002",
+        "McLaren-Honda MP4/4",
+        "Lotus Esprit S1",
+        "Toyota Trueno AE86 (Initial D)",
+        "Ferrari Testarossa",
+        "BMW M3 E46 GTR (NFSMW)",
+      ];
+      const triangles = [
+        "1.6M",
+        "172.2k",
+        "140.5k",
+        "56.4k",
+        "148.3k",
+        "85.3k",
+        "116.7k",
+      ];
+      const quads = [
+        "631.4k",
+        "86k",
+        "67.4k",
+        "26.4k",
+        "73.7k",
+        "41.2k",
+        "54.9k",
+      ];
+      const polygons = ["4k", "524", "394", "605", "162", "375", "1.3k"];
+      const vertices = [
+        "961.6k",
+        "89.2k",
+        "70.2k",
+        "31k",
+        "80.4k",
+        "47.4k",
+        "62.8k",
+      ];
       const toggleModel = document.querySelector("#color");
       // const name = document.querySelector("#modelName")
       const nextBtn = document.querySelector("#next");
@@ -507,12 +601,32 @@
       nextBtn.addEventListener("click", () => {
         currentIndex = (currentIndex + 1) % models.length;
         toggleModel.setAttribute("src", `models/${models[currentIndex]}`);
-        document.getElementById("modelName").innerHTML = modelNames[currentIndex];
+        // modelNames
+        document.getElementById("modelName").innerHTML =
+          modelNames[currentIndex];
+        // triangles
+        document.getElementById("tria").innerHTML = triangles[currentIndex];
+        // vertices
+        document.getElementById("vert").innerHTML = vertices[currentIndex];
+        // quads
+        document.getElementById("quad").innerHTML = quads[currentIndex];
+        // polygons
+        document.getElementById("poly").innerHTML = polygons[currentIndex];
       });
       prevBtn.addEventListener("click", () => {
         currentIndex = (currentIndex - 1 + models.length) % models.length;
         toggleModel.setAttribute("src", `models/${models[currentIndex]}`);
-        document.getElementById("modelName").innerHTML = modelNames[currentIndex];
+        // modelNames
+        document.getElementById("modelName").innerHTML =
+          modelNames[currentIndex];
+        // triangles
+        document.getElementById("tria").innerHTML = triangles[currentIndex];
+        // vertices
+        document.getElementById("vert").innerHTML = vertices[currentIndex];
+        // quads
+        document.getElementById("quad").innerHTML = quads[currentIndex];
+        // polygons
+        document.getElementById("poly").innerHTML = polygons[currentIndex];
       });
     </script>
 
