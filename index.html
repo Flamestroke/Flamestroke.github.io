@@ -25,6 +25,7 @@
     <link rel="stylesheet" href="assets/css/pikaday.min.css" />
     <link rel="stylesheet" href="assets/css/main.css" />
     <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <script defer src="imgs.js"></script>
 
     <style>
       .flogo {
@@ -49,6 +50,29 @@
       }
       footer {
         background-color: #1a1f25;
+      }
+      .box {
+        transform: translateX(400%);
+        transition: transform 0.4s ease;
+      }
+      .box:nth-of-type(odd) {
+        transform: translateX(-400%);
+      }
+      .box.show {
+        transform: translateX(0);
+      }
+      .workimg {
+        opacity: 0;
+        transform: translateX(400%);
+        transition: all 0.7s ;
+      }
+      .workimg:nth-of-type(even) {
+        transform: translateX(-400%);
+      }
+
+      .show {
+        opacity: 1;
+        transform: translateX(0);
       }
     </style>
   </head>
@@ -102,12 +126,9 @@
 
     <main class="page lanidng-page gradienty">
       <section class="portfolio-block block-intro">
+        <br><br>
         <div class="container">
-          <img
-            class="firtimg"
-            src="assets/img/nature/side.png"
-            alt=""
-          />
+          <img class="firtimg box" src="assets/img/nature/side.png" alt="" />
           <div class="row" id="hehe">
             <div class="col-sm"><h1 class="fontTele1">ARCHIT GUPTE</h1></div>
             <div class="col-sm"><h3 class="fontTele2">3D Artist</h3></div>
@@ -126,9 +147,9 @@
       <section class="gradbg" id="bio">
         <div class="container">
           <div class="row">
-            <div class="col-sm">
-              <h1 class="fontTele1 scrl">Bio</h1>
-              <h4 class="fontTele2 scrl" style="text-align: justify">
+            <div class="col-sm box">
+              <h1 class="fontTele1 ">Bio</h1>
+              <h4 class="fontTele2 " style="text-align: justify">
                 An enthusiastic guy who loves to create 3d model of Vehicles and
                 Architecture. Having a degree in Computer Science and an Indie
                 Game Dev myself, I specialize in building Game Engine ready 3d
@@ -137,16 +158,16 @@
               <br />
               <hr class="slash-3" />
               <br />
-              <h1 class="fontTele1 scrl">My Approach</h1>
-              <h4 class="fontTele2 scrl" style="text-align: justify">
+              <h1 class="fontTele1 ">My Approach</h1>
+              <h4 class="fontTele2 " style="text-align: justify">
                 An enthusiastic guy who loves to create 3d model of Vehicles and
                 Architecture. Having a degree in Computer Science and an Indie
                 Game Dev myself, I specialize in building Game Engine ready 3d
                 models.
               </h4>
             </div>
-            <div class="col-sm">
-              <img class="secimg scrl" src="Cars/mp4.png" alt="" />
+            <div class="col-sm box">
+              <img class="secimg " src="Cars/mp4.png" alt="" />
             </div>
           </div>
         </div>
@@ -160,16 +181,7 @@
         <div class="container">
           <div class="row">
             <div class="col-sm">
-              <h1 class="fontTele1">Education</h1>
-              <div>
-                <img class="arr" src="assets/img/nature/downarr.png" alt="" />
-              </div>
-              <div>
-                <img class="arr" src="assets/img/nature/downarr.png" alt="" />
-              </div>
-              <div>
-                <img class="arr" src="assets/img/nature/downarr.png" alt="" />
-              </div>
+              <h1 class="fontTele1 box">Education</h1>
             </div>
             <div class="col-sm">
               <div
@@ -359,9 +371,21 @@
             <h1 style="font-weight: 700; font-style: italic">With Me</h1>
           </div>
           <div class="col-sm-4">
-            <img class="firimg workimg" src="assets/img/nature/redbar.png" alt="">
-            <img class="firimg workimg1" src="assets/img/nature/redbar.png" alt="">
-            <img class="firimg workimg2" src="assets/img/nature/redbar.png" alt="">
+            <img
+              class="secimg workimg"
+              src="assets/img/nature/redbar.png"
+              alt=""
+            />
+            <img
+              class="secimg workimg"
+              src="assets/img/nature/redbar.png"
+              alt=""
+            />
+            <img
+              class="secimg workimg"
+              src="assets/img/nature/redbar.png"
+              alt=""
+            />
           </div>
         </div>
         <div class="row">
@@ -630,7 +654,7 @@
       });
     </script>
 
-    <script>
+    <!-- <script>
       const inner = document.querySelector(".inner");
       const section = document.querySelector("#hehe");
 
@@ -638,7 +662,48 @@
         let value = window.pageYOffset / section.offsetTop + 1;
         inner.style.transform = `scale(${value})`;
       };
+    </script> -->
+    <!-- scroll -->
+    <script>
+      const boxes = document.querySelectorAll(".box");
+      window.addEventListener("scroll", checkBoxes);
+
+      checkBoxes();
+
+      function checkBoxes() {
+        const triggBottom = (window.innerHeight / 4) * 4;
+        console.log(triggBottom);
+
+        boxes.forEach((box) => {
+          const boxTop = box.getBoundingClientRect().top;
+          if (boxTop < triggBottom) {
+            box.classList.add("show");
+          } else {
+            box.classList.remove("show");
+          }
+        });
+      }
     </script>
+        <script>
+          const imgs = document.querySelectorAll(".workimg");
+          window.addEventListener("scroll", checkImgs);
+    
+          checkImgs();
+    
+          function checkImgs() {
+            const triggBtm = (window.innerHeight / 5) * 4;
+            console.log(triggBtm);
+    
+            imgs.forEach((workimg) => {
+              const imgTop = workimg.getBoundingClientRect().top;
+              if (imgTop < triggBottom) {
+                workimg.classList.add("show");
+              } else {
+                workimg.classList.remove("show");
+              }
+            });
+          }
+        </script>
     <script
       type="module"
       src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.0.1/model-viewer.min.js"

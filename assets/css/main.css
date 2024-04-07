@@ -14,6 +14,14 @@
   font-family: KollektifItalic;
   src: url(../fonts/Kollektif-Italic.ttf);
 } */
+@media (prefers-reduced-motion: no-preference) {
+  :root {
+    scroll-behavior: smooth;
+  }
+}
+body{
+  overflow-x: hidden;
+}
 
 * {
   font-family: "Inter", sans-serif;
@@ -29,7 +37,7 @@
 .firtimg {
   height: 100%;
   width: 100%;
-  animation: myAnim 2s ease 0s 1 normal forwards;
+  animation: myAnim 0.7s ease 0s 1 normal forwards;
 }
 
 @keyframes myAnim {
@@ -42,8 +50,7 @@
 	}
 }
 .secimg {
-  height: 100%;
-  width: 100%;
+    width: 100%;
 }
 .gradbg {
   height: 100%;
