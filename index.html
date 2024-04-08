@@ -64,7 +64,7 @@
       .workimg {
         opacity: 0;
         transform: translateX(400%);
-        transition: all 0.7s ;
+        transition: all 0.7s;
       }
       .workimg:nth-of-type(even) {
         transform: translateX(-400%);
@@ -126,7 +126,7 @@
 
     <main class="page lanidng-page gradienty">
       <section class="portfolio-block block-intro">
-        <br><br>
+        <br /><br />
         <div class="container">
           <img class="firtimg box" src="assets/img/nature/side.png" alt="" />
           <div class="row" id="hehe">
@@ -148,8 +148,8 @@
         <div class="container">
           <div class="row">
             <div class="col-sm box">
-              <h1 class="fontTele1 ">Bio</h1>
-              <h4 class="fontTele2 " style="text-align: justify">
+              <h1 class="fontTele1">Bio</h1>
+              <h4 class="fontTele2" style="text-align: justify">
                 An enthusiastic guy who loves to create 3d model of Vehicles and
                 Architecture. Having a degree in Computer Science and an Indie
                 Game Dev myself, I specialize in building Game Engine ready 3d
@@ -158,8 +158,8 @@
               <br />
               <hr class="slash-3" />
               <br />
-              <h1 class="fontTele1 ">My Approach</h1>
-              <h4 class="fontTele2 " style="text-align: justify">
+              <h1 class="fontTele1">My Approach</h1>
+              <h4 class="fontTele2" style="text-align: justify">
                 An enthusiastic guy who loves to create 3d model of Vehicles and
                 Architecture. Having a degree in Computer Science and an Indie
                 Game Dev myself, I specialize in building Game Engine ready 3d
@@ -167,7 +167,7 @@
               </h4>
             </div>
             <div class="col-sm box">
-              <img class="secimg " src="Cars/mp4.png" alt="" />
+              <img class="secimg" src="Cars/mp4.png" alt="" />
             </div>
           </div>
         </div>
@@ -278,9 +278,7 @@
       <h1 class="fontTele1">My Work</h1>
       <div class="modelDiv container">
         <div class="modelDiv modelBg">
-          <h2 class="modelDivFont" id="modelName">
-            Aston Martin Valhalla 2023
-          </h2>
+          <h2 class="modelDivFont" id="modelName">Ferrari Testarossa</h2>
           <div class="stats wrapper">
             <div class="container">
               <div class="statsItems row">
@@ -288,7 +286,7 @@
                   <img class="statsIcons" src="assets/img/logo/48.png" alt="" />
                 </div>
                 <h4 class="stats_font col-sm">Triangles:</h4>
-                <h4 class="stats_num col-sm" id="tria">793</h4>
+                <h4 class="stats_num col-sm" id="tria">85.3k</h4>
               </div>
 
               <div class="statsItems row">
@@ -296,7 +294,7 @@
                   <img class="statsIcons" src="assets/img/logo/49.png" alt="" />
                 </div>
                 <h4 class="stats_font col-sm">Vertices:</h4>
-                <h4 class="stats_num col-sm" id="vert">961.6k</h4>
+                <h4 class="stats_num col-sm" id="vert">47.4k</h4>
               </div>
 
               <div class="statsItems row">
@@ -304,7 +302,7 @@
                   <img class="statsIcons" src="assets/img/logo/50.png" alt="" />
                 </div>
                 <h4 class="stats_font col-sm">Quads:</h4>
-                <h4 class="stats_num col-sm" id="quad">631.4k</h4>
+                <h4 class="stats_num col-sm" id="quad">41.2k</h4>
               </div>
 
               <div class="statsItems row">
@@ -312,7 +310,7 @@
                   <img class="statsIcons" src="assets/img/logo/51.png" alt="" />
                 </div>
                 <h4 class="stats_font col-sm">Polygons:</h4>
-                <h4 class="stats_num col-sm" id="poly">4k</h4>
+                <h4 class="stats_num col-sm" id="poly">375</h4>
               </div>
             </div>
           </div>
@@ -331,10 +329,10 @@
         <div class="modelDiv">
           <model-viewer
             id="color"
-            alt="assets/img/logo/v.png"
-            src="models/val.glb"
+            alt="model viewer"
+            src="models/ferrari_testarossa.glb"
             ar
-            poster="assets/img/cars/val.png"
+            poster="assets/img/cars/poster.png"
             auto-rotate-delay="1000"
             camera-controls="true"
             disable-zoom="true"
@@ -371,21 +369,9 @@
             <h1 style="font-weight: 700; font-style: italic">With Me</h1>
           </div>
           <div class="col-sm-4">
-            <img
-              class="secimg workimg"
-              src="assets/img/nature/redbar.png"
-              alt=""
-            />
-            <img
-              class="secimg workimg"
-              src="assets/img/nature/redbar.png"
-              alt=""
-            />
-            <img
-              class="secimg workimg"
-              src="assets/img/nature/redbar.png"
-              alt=""
-            />
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
           </div>
         </div>
         <div class="row">
@@ -538,6 +524,50 @@
         </div>
       </section> -->
 
+    <section>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink"
+        viewBox="0 24 150 28"
+        preserveAspectRatio="none"
+      >
+        <defs>
+          <path
+            id="gentle-wave"
+            d="M-160 44c30 0 
+      58-18 88-18s
+      58 18 88 18 
+      58-18 88-18 
+      58 18 88 18
+      v44h-352z"
+          />
+        </defs>
+        <g class="waves">
+          <use
+            xlink:href="#gentle-wave"
+            x="50"
+            y="0"
+            fill="#dd3236"
+            fill-opacity=".2"
+          />
+          <use
+            xlink:href="#gentle-wave"
+            x="50"
+            y="3"
+            fill="#dd3236"
+            fill-opacity=".5"
+          />
+          <use
+            xlink:href="#gentle-wave"
+            x="50"
+            y="6"
+            fill="#dd3236"
+            fill-opacity=".9"
+          />
+        </g>
+      </svg>
+    </section>
+
     <!-- <footer class="page-footer py-3 border-top">
       <div class="container my-4">
         <div class="links">
@@ -571,49 +601,49 @@
 
     <script>
       const models = [
+        "ferrari_testarossa.glb",
         "val.glb",
         "scuderia_ferrari_marlboro_f2002.glb",
         "mclaren-honda_mp44.glb",
         "lotus_espirit_s1_1976.glb",
         "ae86.glb",
-        "ferrari_testarossa.glb",
         "bmw_m3_e46_gtr.glb",
       ];
       const modelNames = [
+        "Ferrari Testarossa",
         "Aston Martin Valhalla",
         "Scuderia Ferrari Marlboro F2002",
         "McLaren-Honda MP4/4",
         "Lotus Esprit S1",
         "Toyota Trueno AE86 (Initial D)",
-        "Ferrari Testarossa",
         "BMW M3 E46 GTR (NFSMW)",
       ];
       const triangles = [
+        "85.3k",
         "1.6M",
         "172.2k",
         "140.5k",
         "56.4k",
         "148.3k",
-        "85.3k",
         "116.7k",
       ];
       const quads = [
+        "41.2k",
         "631.4k",
         "86k",
         "67.4k",
         "26.4k",
         "73.7k",
-        "41.2k",
         "54.9k",
       ];
-      const polygons = ["4k", "524", "394", "605", "162", "375", "1.3k"];
+      const polygons = ["375", "4k", "524", "394", "605", "162", "1.3k"];
       const vertices = [
+        "47.4k",
         "961.6k",
         "89.2k",
         "70.2k",
         "31k",
         "80.4k",
-        "47.4k",
         "62.8k",
       ];
       const toggleModel = document.querySelector("#color");
@@ -684,26 +714,28 @@
         });
       }
     </script>
-        <script>
-          const imgs = document.querySelectorAll(".workimg");
-          window.addEventListener("scroll", checkImgs);
-    
-          checkImgs();
-    
-          function checkImgs() {
-            const triggBtm = (window.innerHeight / 5) * 4;
-            console.log(triggBtm);
-    
-            imgs.forEach((workimg) => {
-              const imgTop = workimg.getBoundingClientRect().top;
-              if (imgTop < triggBottom) {
-                workimg.classList.add("show");
-              } else {
-                workimg.classList.remove("show");
-              }
-            });
-          }
-        </script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var bars = document.querySelectorAll(".bar");
+
+        function animateBoxes() {
+          bars.forEach(function (bar, index) {
+            var bounding = bar.getBoundingClientRect();
+            if (bounding.top <= window.innerHeight && bounding.bottom >= 0) {
+              bar.style.opacity = 1;
+              bar.style.animationName = "driftFromRightBox" + (index + 1);
+            } else {
+              bar.style.opacity = 0;
+              bar.style.animationName = "";
+            }
+          });
+        }
+
+        animateBoxes(); // Check if boxes are already in viewport on page load
+
+        window.addEventListener("scroll", animateBoxes);
+      });
+    </script>
     <script
       type="module"
       src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.0.1/model-viewer.min.js"

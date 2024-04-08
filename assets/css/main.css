@@ -270,7 +270,7 @@ hr {
   font-style: normal;
 }
 .modelBg {
-  background-image: url("../img/nature/w11.jpg");
+  background-image: url("../img/nature/w11.png");
   background-size: auto;
   background-position: bottom;
   margin: 0 auto;
@@ -390,4 +390,93 @@ hr {
 	100% {
 		transform: translateX(300px);
 	}
+}
+
+
+
+
+
+
+/* redbars */
+.bar {
+  width: 700px;
+  height: 30px;
+  background-color: #dd3236;
+  opacity: 0;
+  position: relative;
+  margin-bottom: 10px;
+  border-radius: 0.5em;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+/* Keyframe animations */
+@keyframes driftFromRightBox1 {
+  from {
+    opacity: 0;
+    transform: translateX(200%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(20%);
+  }
+}
+
+@keyframes driftFromRightBox2 {
+  from {
+    opacity: 0;
+    transform: translateX(200%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(25%);
+  }
+}
+
+@keyframes driftFromRightBox3 {
+  from {
+    opacity: 0;
+    transform: translateX(200%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(30%);
+  }
+}
+
+
+
+
+
+
+/* svg waves */
+.waves > use {
+  animation: move-forever 2s -2s linear infinite;
+}
+
+.waves > use:nth-child(2) {
+  animation-delay: -3s;
+  animation-duration: 6s;
+}
+.waves > use:nth-child(3) {
+  animation-delay: -4s;
+  animation-duration: 3s;
+}
+
+@keyframes move-forever {
+  0% {
+    transform: translate(-90px, 0%);
+  }
+  100% {
+    transform: translate(85px, 0%);
+  }
+}
+
+svg {
+  /* position: absolute; */
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 30vw;
+  max-height: 200px;
 }
