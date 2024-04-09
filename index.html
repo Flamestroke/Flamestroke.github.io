@@ -54,26 +54,26 @@
       <section class="portfolio-block block-intro">
         <br /><br />
         <div class="container">
-          <img class="firtimg box" src="assets/img/nature/side.png" alt="" />
+          <img class="firtimg box" src="assets/img/main/side.png" alt="" />
           <div class="row" id="hehe">
-            <div class="col-sm"><h1 class="fontTeleH1">ARCHIT GUPTE</h1></div>
-            <div class="col-sm"><h3 class="fontTeleH2">3D Artist</h3></div>
+            <div class="col-sm-8"><h1 class="fontTeleH1">ARCHIT GUPTE</h1></div>
+            <div class="col-sm-4"><h3 class="fontTeleH2">3D Artist</h3></div>
           </div>
         </div>
         <a href="index.html#bio"
           ><img
             class="arr up-down pointer"
-            src="assets/img/nature/downarr.png"
+            src="assets/img/main/downarr.png"
             alt=""
         /></a>
       </section>
-      <img class="secimg" src="assets/img/nature/blob.png" alt="" />
+      <img class="secimg" src="assets/img/main/blob.png" alt="" />
 
       <!-- Bio -->
       <section class="gradbg" id="bio">
         <div class="container">
           <div class="row">
-            <div class="col-sm box">
+            <div class="col-lg box expand">
               <h1 class="fontTele1">Bio</h1>
               <h4 class="fontTele2" style="text-align: justify">
                 An enthusiastic guy who loves to create 3d model of Vehicles and
@@ -92,7 +92,7 @@
                 models.
               </h4>
             </div>
-            <div class="col-sm box">
+            <div class="col-lg box hide">
               <img class="secimg" src="Cars/mp4.png" alt="" />
             </div>
           </div>
@@ -106,10 +106,10 @@
       <section>
         <div class="container">
           <div class="row">
-            <div class="col-sm">
+            <div class="col-md">
               <h1 class="fontTele1 box">Education</h1>
             </div>
-            <div class="col-sm">
+            <div class="col-md">
               <div
                 class="box"
                 style="
@@ -152,20 +152,20 @@
       <section>
         <div class="container">
           <div class="row">
-            <div class="col-sm-4">
+            <div class="col-md-4">
               <h1 class="fontTele1">Web Design</h1>
               <h4 style="font-weight: 700">
                 Design of personal and professional web pages for clients in the
                 arts, photography, design, and entertainment industries
               </h4>
             </div>
-            <div class="col-sm-8">
+            <div class="col-md-8">
               <div class="webby">
                 <div class="cc box">
                   <a href="https://campusconcerns.live/"
                     ><img
                       class="scale-on-hover pointer"
-                      src="assets/img/nature/cc.png"
+                      src="assets/img/projects/cc.png"
                       alt=""
                     />
                   </a>
@@ -175,7 +175,7 @@
                     href="https://github.com/Flamestroke/Bike-Showroom-Mangement-System-with-3dmodel-viewer"
                     ><img
                       class="scale-on-hover pointer"
-                      src="assets/img/nature/bikeshow.png"
+                      src="assets/img/projects/bikeshow.png"
                       alt=""
                     />
                   </a>
@@ -194,7 +194,7 @@
                         <div
                           class="screen-content pointer"
                           style="
-                            background-image: url('assets/img/tech/getfly.png');
+                            background-image: url('assets/img/projects/getfly.png');
                           "
                         ></div>
                       </div>
@@ -215,7 +215,7 @@
       <div class="modelDiv container">
         <div class="modelDiv modelBg">
           <h2 class="modelDivFont" id="modelName">Ferrari Testarossa</h2>
-          <div class="stats wrapper">
+          <div class="stats hide wrapper">
             <div class="container">
               <div class="statsItems row">
                 <div class="statsIcons col-sm">
@@ -279,6 +279,7 @@
               outline: none;
               opacity: 1;
               visibility: visible;
+              margin: auto;
             "
             camera-target="auto auto auto"
             auto-rotate="true"
@@ -315,7 +316,7 @@
             <img
               class="secimg"
               style="z-index: 1"
-              src="assets/img/nature/top.png"
+              src="assets/img/main/top.png"
               alt=""
             />
           </div>
@@ -323,32 +324,37 @@
             <div class="wrapper">
               <div class="container">
                 <div class="row">
-                  <div class="social-icons">
+                  <div class="soc">
                     <a
-                      class="pointer"
+                      class="pointer socimg1"
                       href="https://github.com/Flamestroke "
                       target="_blank"
-                      ><i class="icon ion-social-github"></i></a
+                      ><img
+                        class="pointer"
+                        src="assets/img/logo/github.png"
+                        alt="" /></a
                     ><a
-                      class="pointer"
+                      class="pointer socimg2"
                       href="https://www.instagram.com/flames1roke/"
                       target="_blank"
-                      ><i class="icon ion-social-instagram-outline"></i></a
+                      ><img
+                        class="pointer"
+                        src="assets/img/logo/insta.png"
+                        alt="" /></a
                     ><a
-                      class="pointer"
+                      class="pointer socimg3"
                       href="https://sketchfab.com/Flamestroke"
                       target="_blank"
-                      ><iconify-icon
-                        class="icon"
-                        icon="simple-icons:sketchfab"
-                        style="color: #dd3236"
-                      ></iconify-icon
-                    ></a>
+                      ><img
+                        class="pointer"
+                        src="assets/img/logo/sketchfab.png"
+                        alt=""
+                    /></a>
                   </div>
                 </div>
                 <div class="row">
                   <div class="col-sm-2">
-                    <img class="secimg" src="assets/img/logo/loc.png" alt="" />
+                    <img class="con_img" src="assets/img/logo/loc.png" alt="" />
                   </div>
                   <div class="col-sm-10">
                     <h5 class="fontInter">ADDRESS</h5>
@@ -357,7 +363,11 @@
                 </div>
                 <div class="row">
                   <div class="col-sm-2">
-                    <img class="secimg" src="assets/img/logo/call.png" alt="" />
+                    <img
+                      class="con_img"
+                      src="assets/img/logo/call.png"
+                      alt=""
+                    />
                   </div>
                   <div class="col-sm-10">
                     <h5 class="fontInter">PHONE</h5>
@@ -366,7 +376,11 @@
                 </div>
                 <div class="row">
                   <div class="col-sm-2">
-                    <img class="secimg" src="assets/img/logo/mail.png" alt="" />
+                    <img
+                      class="con_img"
+                      src="assets/img/logo/mail.png"
+                      alt=""
+                    />
                   </div>
                   <div class="col-sm-10">
                     <h5 class="fontInter">E-MAIL</h5>
