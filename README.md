@@ -1,1 +1,1 @@
-https://flamestroke.github.io/resume/
+https://flamestroke.github.io/
