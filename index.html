@@ -28,18 +28,6 @@
     <script defer src="imgs.js"></script>
 
     <style>
-      .flogo {
-        background: url("assets/img/logo/ag.png");
-        height: 50px;
-        width: 146px;
-        display: block;
-      }
-      .visualizor {
-        background: url("assets/img/logo/visualizor.png");
-        height: 23px;
-        width: 100px;
-        display: block;
-      }
       body {
         background: #141010;
         background-size: 400% 400%;
@@ -47,9 +35,6 @@
         .pointer {
           cursor: url("../../img/logo/cursorP.png");
         }
-      }
-      footer {
-        background-color: #1a1f25;
       }
       .box {
         transform: translateX(400%);
@@ -61,77 +46,18 @@
       .box.show {
         transform: translateX(0);
       }
-      .workimg {
-        opacity: 0;
-        transform: translateX(400%);
-        transition: all 0.7s;
-      }
-      .workimg:nth-of-type(even) {
-        transform: translateX(-400%);
-      }
-
-      .show {
-        opacity: 1;
-        transform: translateX(0);
-      }
     </style>
   </head>
 
   <body>
-    <!-- <nav
-      class="navbar navbar-dark navbar-expand-lg fixed-top bg-opacity-25 portfolio-navbar gradient"
-    >
-      <div class="container">
-        <a class="navbar-brand logo pointer" href="#">
-          <span class="flogo"></span></a
-        ><button
-          data-bs-toggle="collapse"
-          class="navbar-toggler"
-          data-bs-target="#navbarNav"
-        >
-          <span class="visually-hidden">Toggle navigation</span
-          ><span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a class="nav-link active pointer" href="index.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link pointer" href="projects.html">Projects</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link pointer" href="cv.html">CV</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link pointer" href="hire-me.html">Contact me</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link pointer" href="achievements.html"
-                >Achievements</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link pointer" href="visualizor.html"
-                ><span class="visualizor"></span
-              ></a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav> -->
-    <!-- <header>
-      <div class="conti"><div class="inner"></div></div>
-    </header> -->
-
     <main class="page lanidng-page gradienty">
       <section class="portfolio-block block-intro">
         <br /><br />
         <div class="container">
           <img class="firtimg box" src="assets/img/nature/side.png" alt="" />
           <div class="row" id="hehe">
-            <div class="col-sm"><h1 class="fontTele1">ARCHIT GUPTE</h1></div>
-            <div class="col-sm"><h3 class="fontTele2">3D Artist</h3></div>
+            <div class="col-sm"><h1 class="fontTeleH1">ARCHIT GUPTE</h1></div>
+            <div class="col-sm"><h3 class="fontTeleH2">3D Artist</h3></div>
           </div>
         </div>
         <a href="index.html#bio"
@@ -196,7 +122,7 @@
                   Bachelors in Computer Engineering
                 </h4>
                 <h5>Vasantdada Patil Pratishthan's College of Engineering</h5>
-                <h5 class="fontKolle2" style="padding: 5px">
+                <h5 class="fontInter2" style="padding: 5px">
                   Overall CGPA(till Sem 6) : 8.86 (2020-2024)
                 </h5>
                 <h4 class="fontTele3" style="padding: 5px">
@@ -205,14 +131,14 @@
                 <h5>
                   Saraswati Education Society's High School and Jr. College
                 </h5>
-                <h5 class="fontKolle2" style="padding: 5px">
+                <h5 class="fontInter2" style="padding: 5px">
                   Overall Percentage: 84.6% (2005-2018)
                 </h5>
                 <h4 class="fontTele3" style="padding: 5px">
                   Higher Secondary School Certificate
                 </h4>
                 <h5>PACE Jr College of Science(Integrated)</h5>
-                <h5 class="fontKolle2" style="padding: 5px">
+                <h5 class="fontInter2" style="padding: 5px">
                   Overall Percentage: 74.6% (2018-2020)
                 </h5>
               </div>
@@ -234,35 +160,45 @@
               </h4>
             </div>
             <div class="col-sm-8">
-              <div class="row">
-                <img
-                  class="secimg col-sm"
-                  src="assets/img/nature/cc.png"
-                  alt=""
-                />
-                <img
-                  class="secimg col-sm"
-                  src="assets/img/nature/bikeshow.png"
-                  alt=""
-                />
-                <div class="col-sm">
+              <div class="webby">
+                <div class="cc box">
+                  <a href="https://campusconcerns.live/"
+                    ><img
+                      class="scale-on-hover pointer"
+                      src="assets/img/nature/cc.png"
+                      alt=""
+                    />
+                  </a>
+                </div>
+                <div class="bk box">
+                  <a
+                    href="https://github.com/Flamestroke/Bike-Showroom-Mangement-System-with-3dmodel-viewer"
+                    ><img
+                      class="scale-on-hover pointer"
+                      src="assets/img/nature/bikeshow.png"
+                      alt=""
+                    />
+                  </a>
+                </div>
+                <div class="box"></div>
+                <div class="gf pointer box">
                   <a
                     href="https://github.com/Flamestroke/Admission-portal"
                     target="_blank"
                     class="pointer"
                     ><div
                       class="portfolio-laptop-mockup scale-on-hover pointer"
-                      style="color: silver"
+                      style="color: black"
                     >
-                      <div class="screen">
+                      <div class="screen pointer">
                         <div
-                          class="screen-content"
+                          class="screen-content pointer"
                           style="
                             background-image: url('assets/img/tech/getfly.png');
                           "
                         ></div>
                       </div>
-                      <div class="keyboard"></div>
+                      <div class="keyboard pointer"></div>
                     </div>
                   </a>
                 </div>
@@ -365,8 +301,8 @@
       <div class="container">
         <div class="row">
           <div class="col-sm-8">
-            <h1 class="fontTele1">Work</h1>
-            <h1 style="font-weight: 700; font-style: italic">With Me</h1>
+            <h1 class="fontTeleW1 box">WORK</h1>
+            <h1 class="fontTeleW2 box">With Me</h1>
           </div>
           <div class="col-sm-4">
             <div class="bar"></div>
@@ -376,228 +312,77 @@
         </div>
         <div class="row">
           <div class="col-sm-8">
-            <img class="secimg" src="assets/img/nature/top.png" alt="" />
+            <img
+              class="secimg"
+              style="z-index: 1"
+              src="assets/img/nature/top.png"
+              alt=""
+            />
           </div>
-          <div class="col-sm-4">
-            <h5>Address</h5>
-            <h5>Phone</h5>
-            <h5>E-mail</h5>
+          <div class="col-sm-4" style="margin: auto">
+            <div class="wrapper">
+              <div class="container">
+                <div class="row">
+                  <div class="social-icons">
+                    <a
+                      class="pointer"
+                      href="https://github.com/Flamestroke "
+                      target="_blank"
+                      ><i class="icon ion-social-github"></i></a
+                    ><a
+                      class="pointer"
+                      href="https://www.instagram.com/flames1roke/"
+                      target="_blank"
+                      ><i class="icon ion-social-instagram-outline"></i></a
+                    ><a
+                      class="pointer"
+                      href="https://sketchfab.com/Flamestroke"
+                      target="_blank"
+                      ><iconify-icon
+                        class="icon"
+                        icon="simple-icons:sketchfab"
+                        style="color: #dd3236"
+                      ></iconify-icon
+                    ></a>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-sm-2">
+                    <img class="secimg" src="assets/img/logo/loc.png" alt="" />
+                  </div>
+                  <div class="col-sm-10">
+                    <h5 class="fontInter">ADDRESS</h5>
+                    <h6 class="fontInter1">Shreerang Society, Thane(W)</h6>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-sm-2">
+                    <img class="secimg" src="assets/img/logo/call.png" alt="" />
+                  </div>
+                  <div class="col-sm-10">
+                    <h5 class="fontInter">PHONE</h5>
+                    <h6 class="fontInter1">+91 8424055215</h6>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-sm-2">
+                    <img class="secimg" src="assets/img/logo/mail.png" alt="" />
+                  </div>
+                  <div class="col-sm-10">
+                    <h5 class="fontInter">E-MAIL</h5>
+                    <a href="mailto:guptearchit@gmail.com"
+                      ><h6 class="fontInter1 pointer">
+                        guptearchit@gmail.com
+                      </h6></a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </section>
-
-    <!-- Sketchfab -->
-
-    <!-- Carousel -->
-    <!-- <div class="row">
-        <div
-          class="col-md-2"
-          style="padding: 50px"
-          id="carouselExampleIndicators"
-          class="carousel slide"
-          data-bs-ride="carousel"
-        >
-          <div class="carousel-indicators">
-            <button
-              type="button"
-              data-bs-target="#carouselExampleIndicators"
-              data-bs-slide-to="0"
-              class="active"
-              aria-current="true"
-              aria-label="Slide 1"
-            ></button>
-            <button
-              type="button"
-              data-bs-target="#carouselExampleIndicators"
-              data-bs-slide-to="1"
-              aria-label="Slide 2"
-            ></button>
-            <button
-              type="button"
-              data-bs-target="#carouselExampleIndicators"
-              data-bs-slide-to="2"
-              aria-label="Slide 3"
-            ></button>
-          </div>
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <div class="image-gradient">
-                <img
-                  src="assets/img/achievements/Certificate_Oscillation_2021Archit Anup Gupte-1_page-0001.jpg"
-                  class="d-block w-100"
-                  alt="..."
-                />
-              </div>
-            </div>
-            <div class="carousel-item">
-              <div class="image-gradient">
-                <img
-                  src="assets/img/achievements/Blockchain Certificates-2_page-0001.jpg"
-                  class="d-block w-100"
-                  alt="..."
-                />
-              </div>
-            </div>
-            <div class="carousel-item">
-              <div class="image-gradient">
-                <img
-                  src="assets/img/achievements/1302512194.jpg"
-                  class="d-block w-100"
-                  alt="..."
-                />
-              </div>
-            </div>
-          </div>
-          <button
-            class="carousel-control-prev"
-            type="button"
-            data-bs-target="#carouselExampleIndicators"
-            data-bs-slide="prev"
-          >
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button
-            class="carousel-control-next"
-            type="button"
-            data-bs-target="#carouselExampleIndicators"
-            data-bs-slide="next"
-          >
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
-        </div> -->
-
-    <!-- <section class="portfolio-block skills">
-        <div class="container">
-          <div class="heading">
-            <h2>Special Skills</h2>
-          </div>
-          <div class="row">
-            <div class="col-md-4">
-              <div class="card special-skill-item border-0">
-                <div class="card-header bg-transparent border-0">
-                  <i class="icon ion-ios-star-outline"></i>
-                </div>
-                <div class="card-body">
-                  <h3 class="card-title">Web Design</h3>
-                  <p class="card-text">
-                    Nullam id dolor id nibh ultricies vehicula ut id elit. Cras
-                    justo odio, dapibus ac facilisis in, egestas eget quam.
-                    Donec id elit non mi porta gravida at eget metus.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="card special-skill-item border-0">
-                <div class="card-header bg-transparent border-0">
-                  <i class="icon ion-ios-lightbulb-outline"></i>
-                </div>
-                <div class="card-body">
-                  <h3 class="card-title">Interface Design</h3>
-                  <p class="card-text">
-                    Nullam id dolor id nibh ultricies vehicula ut id elit. Cras
-                    justo odio, dapibus ac facilisis in, egestas eget quam.
-                    Donec id elit non mi porta gravida at eget metus.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="card special-skill-item border-0">
-                <div class="card-header bg-transparent border-0">
-                  <i class="icon ion-ios-gear-outline"></i>
-                </div>
-                <div class="card-body">
-                  <h3 class="card-title">3D Modelling</h3>
-                  <p class="card-text">
-                    Nullam id dolor id nibh ultricies vehicula ut id elit. Cras
-                    justo odio, dapibus ac facilisis in, egestas eget quam.
-                    Donec id elit non mi porta gravida at eget metus.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section> -->
-
-    <section>
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        xmlns:xlink="http://www.w3.org/1999/xlink"
-        viewBox="0 24 150 28"
-        preserveAspectRatio="none"
-      >
-        <defs>
-          <path
-            id="gentle-wave"
-            d="M-160 44c30 0 
-      58-18 88-18s
-      58 18 88 18 
-      58-18 88-18 
-      58 18 88 18
-      v44h-352z"
-          />
-        </defs>
-        <g class="waves">
-          <use
-            xlink:href="#gentle-wave"
-            x="50"
-            y="0"
-            fill="#dd3236"
-            fill-opacity=".2"
-          />
-          <use
-            xlink:href="#gentle-wave"
-            x="50"
-            y="3"
-            fill="#dd3236"
-            fill-opacity=".5"
-          />
-          <use
-            xlink:href="#gentle-wave"
-            x="50"
-            y="6"
-            fill="#dd3236"
-            fill-opacity=".9"
-          />
-        </g>
-      </svg>
-    </section>
-
-    <!-- <footer class="page-footer py-3 border-top">
-      <div class="container my-4">
-        <div class="links">
-          <a href="#">About me</a>
-          <a href="#">Contact me</a><a href="#">Projects</a>
-        </div>
-        <div class="social-icons">
-          <a
-            class="me-3 pointer"
-            href="https://github.com/Flamestroke "
-            target="_blank"
-            ><i class="icon ion-social-github"></i></a
-          ><a
-            class="me-3 pointer"
-            href="https://www.instagram.com/flames1roke/"
-            target="_blank"
-            ><i class="icon ion-social-instagram-outline"></i></a
-          ><a
-            class="me-3 pointer"
-            href="https://sketchfab.com/Flamestroke"
-            target="_blank"
-            ><iconify-icon
-              icon="simple-icons:sketchfab"
-              style="color: rgb(229, 229, 229)"
-              class="icon"
-            ></iconify-icon
-          ></a>
-        </div>
-      </div>
-    </footer> -->
 
     <script>
       const models = [
@@ -684,15 +469,6 @@
       });
     </script>
 
-    <!-- <script>
-      const inner = document.querySelector(".inner");
-      const section = document.querySelector("#hehe");
-
-      window.onscroll = function () {
-        let value = window.pageYOffset / section.offsetTop + 1;
-        inner.style.transform = `scale(${value})`;
-      };
-    </script> -->
     <!-- scroll -->
     <script>
       const boxes = document.querySelectorAll(".box");
@@ -714,6 +490,7 @@
         });
       }
     </script>
+
     <script>
       document.addEventListener("DOMContentLoaded", function () {
         var bars = document.querySelectorAll(".bar");
