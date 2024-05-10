@@ -3,6 +3,10 @@
   src: url(../fonts/TelegrafBold.otf);
 }
 @font-face {
+  font-family: lucid;
+  src: url(../fonts/Lucidity-Expand.ttf);
+}
+@font-face {
   font-family: TelegrafRegular;
   src: url(../fonts/TelegrafRegular.otf);
 }
