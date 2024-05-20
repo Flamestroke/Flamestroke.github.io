@@ -17,8 +17,7 @@
   }
 }
 body, html {
-  overflow-x: hidden !important;
-  position: absolute;
+  overflow-x: hidden;
 }
 
 * {
