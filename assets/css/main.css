@@ -17,7 +17,8 @@
   }
 }
 body, html {
-  overflow-x: hidden;
+  overflow-x: hidden !important;
+  position: relative;
 }
 
 * {
@@ -400,9 +401,6 @@ hr {
     max-width: 1024px;
     margin-bottom: 100px;
     background-position: center;
-  }
-  body {
-    overflow-x: hidden;
   }
 }
 @media screen and (max-width: 768px) {
