@@ -16,9 +16,8 @@
     scroll-behavior: smooth;
   }
 }
-body, html {
-  overflow-x: hidden !important;
-  position: relative;
+body {
+  overflow-x: hidden;
 }
 
 * {
