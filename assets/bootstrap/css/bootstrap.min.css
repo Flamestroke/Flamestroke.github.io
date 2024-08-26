@@ -193,9 +193,9 @@
   }
 }
 * {
-  cursor: url("../../img/logo/cursor.png"), auto;
+  cursor: url("../../img/logo/cursor.webp"), auto;
   .pointer {
-    cursor: url("../../img/logo/cursorP.png"), auto;
+    cursor: url("../../img/logo/cursorP.webp"), auto;
   }
 }
 body {
@@ -209,9 +209,9 @@ body {
   background-color: var(--bs-body-bg);
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-  cursor: url("../../img/logo/cursor.png"), auto;
+  cursor: url("../../img/logo/cursor.webp"), auto;
   .pointer {
-    cursor: url("../../img/logo/cursorP.png"), auto;
+    cursor: url("../../img/logo/cursorP.webp"), auto;
   }
 }
 hr {
@@ -2893,7 +2893,7 @@ textarea.form-control.is-invalid {
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
     border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
   .pointer {
-    cursor: url("../../img/logo/cursorP.png"), auto;
+    cursor: url("../../img/logo/cursorP.webp"), auto;
   }
 }
 @media (prefers-reduced-motion: reduce) {
