@@ -2,9 +2,13 @@
 <html data-bs-theme="dark">
   <head>
     <meta charset="utf-8" />
-    <meta
+    <!-- <meta
       name="viewport"
       content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
+    /> -->
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
     />
     <title>Archit Gupte</title>
     <link rel="icon" type="image/x-icon" href="assets/img/logo/agX.webp" />
@@ -28,8 +32,9 @@
     <script defer src="imgs.js"></script>
 
     <style>
-      wrapper {
+      .mobilefix {
         overflow-x: hidden;
+        position: relative;
       }
       body {
         background: #141010;
@@ -58,7 +63,7 @@
   </head>
 
   <body>
-    <wrapper>
+    <wrapper class="mobilefix">
       <main class="page lanidng-page gradienty">
         <section class="portfolio-block block-intro">
           <br /><br />
@@ -244,8 +249,7 @@
               <div class="col-md-8">
                 <div class="webby">
                   <div class="cc box">
-                    <a href="https://campusconcerns.live/"
-                       target="_blank"
+                    <a href="https://campusconcerns.live/" target="_blank"
                       ><img
                         class="scale-on-hover pointer"
                         src="assets/img/projects/cc.webp"
@@ -298,7 +302,7 @@
       <br />
 
       <!-- model viewer -->
-      <section class="modelDiv">
+      <section class="modelDiv" id="modelView">
         <h1 class="fontTele1 container">My Work</h1>
         <div class="modelDiv container">
           <div class="modelDiv modelBg">
@@ -516,7 +520,7 @@
         "lotus_espirit_s1_1976.glb",
         "ae86.glb",
         "bmw_m3_e46_gtr.glb",
-        "sf26.glb"
+        "sf26.glb",
       ];
       const modelNames = [
         "Ferrari Testarossa",
@@ -526,7 +530,7 @@
         "Lotus Esprit S1",
         "Toyota Trueno AE86 (Initial D)",
         "BMW M3 E46 GTR (NFSMW)",
-        "Scuderia Ferrari HP SF26 Concept Livery"
+        "Scuderia Ferrari HP SF26 Concept Livery",
       ];
       const triangles = [
         "85.3k",
@@ -536,7 +540,7 @@
         "56.4k",
         "148.3k",
         "116.7k",
-        "60.5k"
+        "60.5k",
       ];
       const quads = [
         "41.2k",
@@ -546,9 +550,9 @@
         "26.4k",
         "73.7k",
         "54.9k",
-        "30.3k"
+        "30.3k",
       ];
-      const polygons = ["375", "4k", "524", "394", "605", "162", "1.3k","265"];
+      const polygons = ["375", "4k", "524", "394", "605", "162", "1.3k", "265"];
       const vertices = [
         "47.4k",
         "961.6k",
@@ -557,7 +561,7 @@
         "31k",
         "80.4k",
         "62.8k",
-        "31.5k"
+        "31.5k",
       ];
       const toggleModel = document.querySelector("#color");
       // const name = document.querySelector("#modelName")
